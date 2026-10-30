@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="360" viewBox="0 0 880 360" font-family="'Segoe UI', Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F3F7FF"/>
+      <stop offset="100%" stop-color="#E8F0FE"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#005EEB"/>
+      <stop offset="100%" stop-color="#003076"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#005EEB"/>
+    </marker>
+  </defs>
+
+  <rect width="880" height="360" fill="url(#bg)"/>
+  <rect x="0" y="0" width="880" height="52" fill="url(#brand)"/>
+  <text x="24" y="33" fill="#FFFFFF" font-size="20" font-weight="700">Workflow "Olá Mundo" — Doctum RPA</text>
+
+  <!-- Manual trigger -->
+  <g>
+    <rect x="48" y="130" width="180" height="110" rx="12" fill="#FFFFFF" stroke="#D2D0CE" stroke-width="1.5"/>
+    <rect x="48" y="130" width="180" height="8" rx="4" fill="#005EEB"/>
+    <circle cx="86" cy="170" r="18" fill="#E3EDFF"/>
+    <path d="M80 162 L96 170 L80 178 Z" fill="#005EEB"/>
+    <text x="138" y="166" font-size="15" font-weight="700" fill="#003076" text-anchor="middle">Manual</text>
+    <text x="138" y="186" font-size="13" fill="#605E5C" text-anchor="middle">Trigger</text>
+    <text x="138" y="220" font-size="11" fill="#8A8886" text-anchor="middle">Inicia o fluxo</text>
+  </g>
+
+  <line x1="232" y1="185" x2="336" y2="185" stroke="#005EEB" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Set node -->
+  <g>
+    <rect x="344" y="130" width="180" height="110" rx="12" fill="#FFFFFF" stroke="#D2D0CE" stroke-width="1.5"/>
+    <rect x="344" y="130" width="180" height="8" rx="4" fill="#005EEB"/>
+    <circle cx="382" cy="170" r="18" fill="#E3EDFF"/>
+    <path d="M374 164 h16 v12 h-16 z M378 160 v4 M386 160 v4" fill="none" stroke="#005EEB" stroke-width="2.2"/>
+    <text x="434" y="166" font-size="15" font-weight="700" fill="#003076" text-anchor="middle">Set</text>
+    <text x="434" y="186" font-size="13" fill="#605E5C" text-anchor="middle">mensagem = "Olá Mundo"</text>
+    <text x="434" y="220" font-size="11" fill="#8A8886" text-anchor="middle">Cria o dado</text>
+  </g>
+
+  <line x1="528" y1="185" x2="632" y2="185" stroke="#005EEB" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- No-op / output -->
+  <g>
+    <rect x="640" y="130" width="180" height="110" rx="12" fill="#FFFFFF" stroke="#D2D0CE" stroke-width="1.5"/>
+    <rect x="640" y="130" width="180" height="8" rx="4" fill="#005EEB"/>
+    <circle cx="678" cy="170" r="18" fill="#E3EDFF"/>
+    <path d="M670 170 l6 6 l12 -12" fill="none" stroke="#005EEB" stroke-width="2.5"/>
+    <text x="730" y="166" font-size="15" font-weight="700" fill="#003076" text-anchor="middle">No Operation</text>
+    <text x="730" y="186" font-size="13" fill="#605E5C" text-anchor="middle">Fim</text>
+    <text x="730" y="220" font-size="11" fill="#8A8886" text-anchor="middle">Confirma a saída</text>
+  </g>
+
+  <!-- Output bubble -->
+  <g>
+    <rect x="344" y="280" width="300" height="48" rx="10" fill="#003076"/>
+    <text x="494" y="310" font-size="15" fill="#FFFFFF" text-anchor="middle" font-family="'Consolas', monospace">Saída: { "mensagem": "Olá Mundo" }</text>
+  </g>
+  <line x1="434" y1="242" x2="434" y2="278" stroke="#003076" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+</svg>

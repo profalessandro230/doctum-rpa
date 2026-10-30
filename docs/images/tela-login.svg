@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="460" viewBox="0 0 880 460" font-family="'Segoe UI', Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="brandL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#005EEB"/>
+      <stop offset="100%" stop-color="#003076"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F3F7FF"/>
+      <stop offset="100%" stop-color="#E8F0FE"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="880" height="460" fill="url(#panel)"/>
+
+  <!-- Left brand panel -->
+  <rect x="0" y="0" width="380" height="460" fill="url(#brandL)"/>
+  <text x="190" y="150" fill="#FFFFFF" font-size="46" font-weight="800" text-anchor="middle" letter-spacing="1">DOCTUM</text>
+  <text x="190" y="184" fill="#C7DDFF" font-size="16" text-anchor="middle" letter-spacing="3">REDE DE ENSINO</text>
+  <text x="190" y="250" fill="#FFFFFF" font-size="18" font-style="italic" text-anchor="middle">Transformando vidas!</text>
+  <path d="M300 90 q80 60 0 180" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Login card -->
+  <rect x="440" y="90" width="380" height="290" rx="16" fill="#FFFFFF" stroke="#D2D0CE"/>
+  <text x="630" y="134" font-size="22" font-weight="700" fill="#003076" text-anchor="middle">Entrar</text>
+
+  <text x="470" y="176" font-size="12" fill="#605E5C">E-mail</text>
+  <rect x="470" y="184" width="320" height="40" rx="8" fill="#F3F2F1" stroke="#D2D0CE"/>
+  <text x="486" y="209" font-size="13" fill="#8A8886">zeons9999@gmail.com</text>
+
+  <text x="470" y="252" font-size="12" fill="#605E5C">Senha</text>
+  <rect x="470" y="260" width="320" height="40" rx="8" fill="#F3F2F1" stroke="#D2D0CE"/>
+  <text x="486" y="285" font-size="13" fill="#8A8886">••••••••••</text>
+
+  <rect x="470" y="320" width="320" height="44" rx="8" fill="url(#brandL)"/>
+  <text x="630" y="348" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">Entrar</text>
+</svg>

@@ -1,0 +1,85 @@
+﻿node.exe : [33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned 
+to become the default in a future major version of Vite:
+No C:\Users\Usuario-01\AppData\Local\Temp\opencode\pnpm-bin\pnpm.ps1:24 caractere:5
++     & "node$exe"  "$basedir/../../../../../../../Program Files/nodejs ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([33m(!) Your V...ersion of Vite::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  - `__dirname` (vite.config.mts:28:29). Use `import.meta.dirname` instead
+  - import "../@n8n/design-system/src/icons/lucide/vite" without a file extension (vite.config.mts:12:35). Add the 
+file extension
+  - import "./vite/i18n-locales-hmr-helpers" without a file extension (vite.config.mts:15:48). Add the file extension
+  - import "../../@n8n/constants/src/csp" without a file extension (vite.config.mts:20:40). Add the file extension
+  - ESM syntax in a file loaded as CommonJS (../../@n8n/constants/src/csp.ts:6:1). Use a `.mjs` extension or set 
+`"type": "module"` in the closest package.json
+  - import "./bucket" without a file extension (../@n8n/design-system/src/icons/lucide/vite.ts:5:46). Add the file 
+extension
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.[39m
+
+ RUN  v5.0.1 C:/Users/Usuario-01/Documents/Projeto Padr├úo/n8n-master/packages/frontend/editor-ui
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts (11 tests | 1 failed | 10 skipped) 42ms
+   ÔØ» diag values (11)
+     Ôåô measured agent alignment
+     Ôåô expanded group frames after tidy
+     Ôåô frames spaced by agent members
+     Ôåô reserves room: sticky over billing only
+     Ôåô sticky spanning two groups
+     Ôåô grows a sticky note
+     Ôåô partial group member sticky
+     Ôåô agent fallback containment
+     ├ù saved sticky over hidden members 38ms
+     Ôåô chain through expanded group
+     Ôåô AI subtree in expanded group
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ» Failed Tests 1 ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag values > saved sticky over hidden members
+AssertionError: expected { ÔÇª(3) } to deeply equal {}
+
+- Expected
++ Received
+
+- {}
++ {
++   "first": {
++     "h": undefined,
++     "w": undefined,
++     "x": 1008,
++     "y": 1008,
++   },
++   "second": {
++     "h": undefined,
++     "w": undefined,
++     "x": 1008,
++     "y": 1088,
++   },
++   "sticky": {
++     "h": undefined,
++     "w": undefined,
++     "x": 960,
++     "y": 928,
++   },
++ }
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:469:6
+    467|    second: pos.get('second'),
+    468|    sticky: pos.get('sticky'),
+    469|   }).toEqual({});
+       |      ^
+    470|  });
+    471|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[1/1]ÔÄ»
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 10 skipped (11)
+   Start at  01:45:17
+   Duration  12.70s (transform 58%, import 23%, setup 10%, environment 9%)
+
+  Transform  transforming modules took 7.15s ┬À 58% of tracked time, re-done on every run
+             persist transforms across runs with fsModuleCache: true
+             learn more: https://vitest.dev/guide/improving-performance#caching-between-reruns
+

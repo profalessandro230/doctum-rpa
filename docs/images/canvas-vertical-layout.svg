@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="420" viewBox="0 0 880 420" font-family="'Segoe UI', Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="brand2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#005EEB"/>
+      <stop offset="100%" stop-color="#003076"/>
+    </linearGradient>
+    <marker id="arrow2" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#005EEB"/>
+    </marker>
+  </defs>
+
+  <rect width="880" height="420" fill="#F3F7FF"/>
+  <rect x="0" y="0" width="880" height="52" fill="url(#brand2)"/>
+  <text x="24" y="33" fill="#FFFFFF" font-size="20" font-weight="700">Layout vertical (empilhado) — inspirado no Power Automate</text>
+
+  <!-- Left node panel -->
+  <rect x="24" y="76" width="150" height="320" rx="10" fill="#FFFFFF" stroke="#D2D0CE"/>
+  <text x="99" y="100" font-size="13" font-weight="700" fill="#003076" text-anchor="middle">Painel de Nós</text>
+  <g font-size="12" fill="#323130">
+    <rect x="38" y="116" width="122" height="30" rx="6" fill="#E3EDFF"/><text x="52" y="136">Trigger</text>
+    <rect x="38" y="154" width="122" height="30" rx="6" fill="#F3F2F1"/><text x="52" y="174">Ações</text>
+    <rect x="38" y="192" width="122" height="30" rx="6" fill="#F3F2F1"/><text x="52" y="212">Lógica / If</text>
+    <rect x="38" y="230" width="122" height="30" rx="6" fill="#F3F2F1"/><text x="52" y="250">Transform</text>
+    <rect x="38" y="268" width="122" height="30" rx="6" fill="#F3F2F1"/><text x="52" y="288">Integrações</text>
+    <rect x="38" y="306" width="122" height="30" rx="6" fill="#F3F2F1"/><text x="52" y="326">AI Agent</text>
+  </g>
+
+  <!-- Vertical stacked nodes -->
+  <g>
+    <!-- node 1 -->
+    <rect x="360" y="80" width="200" height="64" rx="10" fill="#FFFFFF" stroke="#005EEB" stroke-width="2"/>
+    <circle cx="392" cy="112" r="16" fill="#E3EDFF"/><path d="M386 104 L400 112 L386 120 Z" fill="#005EEB"/>
+    <text x="470" y="108" font-size="14" font-weight="700" fill="#003076" text-anchor="middle">Manual Trigger</text>
+    <text x="470" y="128" font-size="11" fill="#605E5C" text-anchor="middle">Início</text>
+
+    <line x1="460" y1="144" x2="460" y2="188" stroke="#005EEB" stroke-width="3" marker-end="url(#arrow2)"/>
+
+    <!-- node 2 -->
+    <rect x="360" y="192" width="200" height="64" rx="10" fill="#FFFFFF" stroke="#D2D0CE" stroke-width="1.5"/>
+    <circle cx="392" cy="224" r="16" fill="#E3EDFF"/><rect x="384" y="216" width="16" height="16" rx="3" fill="none" stroke="#005EEB" stroke-width="2"/>
+    <text x="470" y="220" font-size="14" font-weight="700" fill="#003076" text-anchor="middle">HTTP Request</text>
+    <text x="470" y="240" font-size="11" fill="#605E5C" text-anchor="middle">Chamada à API</text>
+
+    <line x1="460" y1="256" x2="460" y2="300" stroke="#005EEB" stroke-width="3" marker-end="url(#arrow2)"/>
+
+    <!-- node 3 -->
+    <rect x="360" y="304" width="200" height="64" rx="10" fill="#FFFFFF" stroke="#D2D0CE" stroke-width="1.5"/>
+    <circle cx="392" cy="336" r="16" fill="#E3EDFF"/><path d="M384 336 l6 6 l12 -12" fill="none" stroke="#005EEB" stroke-width="2.4"/>
+    <text x="470" y="332" font-size="14" font-weight="700" fill="#003076" text-anchor="middle">Slack</text>
+    <text x="470" y="352" font-size="11" fill="#605E5C" text-anchor="middle">Notificação</text>
+  </g>
+
+  <!-- Right properties panel -->
+  <rect x="640" y="76" width="216" height="320" rx="10" fill="#FFFFFF" stroke="#D2D0CE"/>
+  <text x="748" y="100" font-size="13" font-weight="700" fill="#003076" text-anchor="middle">Propriedades</text>
+  <g font-size="11" fill="#605E5C">
+    <text x="660" y="132">Método: GET</text>
+    <text x="660" y="156">URL da API</text>
+    <text x="660" y="180">Autenticação</text>
+    <text x="660" y="204">Cabeçalhos</text>
+    <text x="660" y="228">Corpo / JSON</text>
+    <text x="660" y="252">Retentar: 3x</text>
+  </g>
+</svg>

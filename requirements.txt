@@ -1,0 +1,69 @@
+# =====================================================================
+#  Doctum — Automação RPA
+#  requirements.txt
+#
+#  Lista de todas as ferramentas utilizadas para INSTALAR e RODAR a
+#  ferramenta, com o número da versão instalada neste ambiente.
+#
+#  Observação: o projeto é um monorepo em Node.js/pnpm. "requirements.txt"
+#  segue aqui o formato pedido — um inventário das ferramentas (não um
+#  manifest do pip/pnpm). As dependências de código são resolvidas pelo
+#  lockfile do pnpm.
+# =====================================================================
+
+# ---------------------------------------------------------------------
+#  1. RUNTIME E GERENCIADOR DE PACOTES (obrigatório)
+# ---------------------------------------------------------------------
+# Node.js — motor de execução (engines: node >= 24.0.0)
+node==24.22.1
+
+# pnpm — gerenciador de pacotes do monorepo (engines: pnpm >= 12.4.2)
+pnpm==12.15.0
+# (o package.json fixa packageManager: pnpm@12.4.2 via corepack)
+
+# ---------------------------------------------------------------------
+#  2. APLICAÇÃO (fork personalizado)
+# ---------------------------------------------------------------------
+# n8n — plataforma de automação de workflows (pacote CLI deste repo)
+n8n==2.45.0
+
+# ---------------------------------------------------------------------
+#  3. BANCO DE DADOS PADRÃO
+# ---------------------------------------------------------------------
+# SQLite — driver nativo usado pelo n8n (DB padrão em ~/.n8n/database.sqlite)
+sqlite3==5.1.7
+
+# Postgres/MySQL — suportados opcionalmente via variáveis de ambiente
+# (não instalados neste ambiente; habilitar em produção)
+
+# ---------------------------------------------------------------------
+#  4. SEGURANÇA / CREDENCIAIS
+# ---------------------------------------------------------------------
+# bcryptjs — hash de senhas dos usuários (SALT_ROUNDS=10)
+bcryptjs==2.4.3
+
+# ---------------------------------------------------------------------
+#  5. FERRAMENTAS DE LINHA DE COMANDO / DEVOPS (instalação e versionamento)
+# ---------------------------------------------------------------------
+# Git — controle de versão e clone do repositório
+git==2.56.0
+
+# GitHub CLI (gh) — autenticação e publicação no GitHub
+gh==2.103.3
+
+# ---------------------------------------------------------------------
+#  6. CONTÊINER (opcional — para instalar/rodar com Docker)
+# ---------------------------------------------------------------------
+# Docker Engine / Docker Desktop — execução contêinerizada
+# (não instalado neste ambiente; versão mínima recomendada: 24.x)
+#docker>=24.0.0
+
+# Imagem base oficial do n8n usada como referência:
+#   docker.n8n.io/n8nio/n8n:2.45.0
+
+# ---------------------------------------------------------------------
+#  7. OPCIONAIS (build/testes)
+# ---------------------------------------------------------------------
+# Python — task runner opcional para acelerar builds e testes
+# (não instalado neste ambiente; o build funciona sem ele)
+#python>=3.11

@@ -1,0 +1,711 @@
+﻿node.exe : [33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned 
+to become the default in a future major version of Vite:
+No C:\Users\Usuario-01\AppData\Local\Temp\opencode\pnpm-bin\pnpm.ps1:24 caractere:5
++     & "node$exe"  "$basedir/../../../../../../../Program Files/nodejs ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([33m(!) Your V...ersion of Vite::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  - `__dirname` (vite.config.mts:28:29). Use `import.meta.dirname` instead
+  - import "../@n8n/design-system/src/icons/lucide/vite" without a file extension (vite.config.mts:12:35). Add the 
+file extension
+  - import "./vite/i18n-locales-hmr-helpers" without a file extension (vite.config.mts:15:48). Add the file extension
+  - import "../../@n8n/constants/src/csp" without a file extension (vite.config.mts:20:40). Add the file extension
+  - ESM syntax in a file loaded as CommonJS (../../@n8n/constants/src/csp.ts:6:1). Use a `.mjs` extension or set 
+`"type": "module"` in the closest package.json
+  - import "./bucket" without a file extension (../@n8n/design-system/src/icons/lucide/vite.ts:5:46). Add the file 
+extension
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.[39m
+
+ RUN  v5.0.1 C:/Users/Usuario-01/Documents/Projeto Padr├úo/n8n-master/packages/frontend/editor-ui
+
+ Ô£ô src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > should layout a basic workflow 23ms
+ Ô£ô src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > should layout a basic workflow with selected nodes 4ms
+ Ô£ô src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > should ignore an empty explicit node filter 4ms
+ Ô£ô src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > should layout a workflow with AI nodes 9ms
+ Ô£ô src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > should layout a workflow with sticky notes 4ms
+ Ô£ô src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > should not reorder nodes vertically as it affects execution order 2ms
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > should place the true IF branch above the false branch after tidying ordered branches 11ms
+   ÔåÆ expected -32 to be less than -32
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > should place the true IF branch above the false branch after tidying crossed branches 3ms
+   ÔåÆ expected -32 to be less than -32
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > should handle nodes with missing dimensions 5ms
+   ÔåÆ expected 96 to be greater than 272
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > should use agent fallback dimensions and preserve center alignment when unmeasured 8ms
+   ÔåÆ expected { x: +0, y: +0, width: 448, ÔÇª(1) } to deeply equal { x: +0, y: +0, width: 1024, ÔÇª(1) }
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > should keep a measured agent card on the grid with its handle on the row axis 3ms
+   ÔåÆ expected 384 to be 128 // Object.is equality
+ Ô£ô src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > should calculate dimensions for configurable nodes with missing dimensions 3ms
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > should handle mixed scenarios with sticky notes and missing dimensions 2ms
+   ÔåÆ expected 94 to be greater than 96
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > lays out a collapsed group as a unit, tidies members and drops the chip 7ms
+   ÔåÆ expected +0 to be 576 // Object.is equality
+ Ô£ô src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > keeps a collapsed agent card on the grid when restoring group members 3ms
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > keeps a collapsed group clustered between its external neighbours 3ms
+   ÔåÆ expected 160 to be less than 64
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > tidies hidden members when a collapsed group chip is selected 3ms
+   ÔåÆ expected +0 to be 576 // Object.is equality
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > tidies a collapsed branch group selected by its hidden members 3ms
+   ÔåÆ expected +0 to be 576 // Object.is equality
+ Ô£ô src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > keeps a top-left collapsed group anchored in place while tidying contents 7ms
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > is idempotent: tidying an already tidy canvas with expanded groups moves nothing 11ms
+   ÔåÆ expected Map{ ÔÇª(6) } to deeply equal Map{ ÔÇª(6) }
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > is idempotent: tidying an already tidy canvas with collapsed groups moves nothing 12ms
+   ÔåÆ expected Map{ ÔÇª(6) } to deeply equal Map{ ÔÇª(6) }
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > is idempotent with parallel groups when one group is collapsed 13ms
+   ÔåÆ expected Map{ ÔÇª(7) } to deeply equal Map{ ÔÇª(7) }
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > tidies the members of an expanded group and drops the chip 3ms
+   ÔåÆ expected +0 to be 576 // Object.is equality
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > keeps an internal sticky note aligned with a expanded group 3ms
+   ÔåÆ expected +0 to be 576 // Object.is equality
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > keeps an internal sticky note aligned with a collapsed group 3ms
+   ÔåÆ expected +0 to be 576 // Object.is equality
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > uses saved sticky dimensions for hidden group members 4ms
+   ÔåÆ expected +0 to be 576 // Object.is equality
+ Ô£ô src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > moves a sticky note covering an expanded group along with its members 3ms
+ Ô£ô src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > moves a sticky note covering a collapsed group along with its members 2ms
+ Ô£ô src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > moves a sticky note covering an expanded group when tidying only that group 2ms
+ Ô£ô src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > moves a sticky note covering a collapsed group when tidying only that group 2ms
+ Ô£ô src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > leaves a sticky note alone when it covers no node or group 2ms
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > reserves room for a sticky note that covers a group 7ms
+   ÔåÆ expected true to be false // Object.is equality
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > falls back to following covered nodes when a sticky note spans two groups 4ms
+   ÔåÆ expected 320 to be 400 // Object.is equality
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > keeps a sticky note covering collapsed and expanded group boxes 4ms
+   ÔåÆ expected 320 to be 400 // Object.is equality
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > grows a sticky note when needed to keep covering the same group boxes 4ms
+   ÔåÆ 
+ Ô£ô src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > leaves a sticky note alone when it only partially covers group boxes 5ms
+ Ô£ô src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > falls back when a sticky note covers a group and an ungrouped node 4ms
+ Ô£ô src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > leaves a shared sticky note out when tidying only one covered group 2ms
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > leaves a sticky note out when it also covers a partial group member 3ms
+   ÔåÆ expected [ 'approval-start', 'approval-done' ] to include 'sticky'
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > keeps a chain through an expanded group on the connection axis without a covering sticky note 5ms
+   ÔåÆ expected 352 to be 144 // Object.is equality
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > keeps a chain through an expanded group on the connection axis with a covering sticky note 4ms
+   ÔåÆ expected 352 to be 144 // Object.is equality
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > keeps an expanded group clustered between its external neighbours 3ms
+   ÔåÆ expected 160 to be less than 64
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > lays out expanded groups without overlapping their frames 5ms
+   ÔåÆ expected [ 'Approval overlaps Billing' ] to deeply equal []
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > spaces expanded group frames by the size of their tidied members 6ms
+   ÔåÆ expected true to be false // Object.is equality
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > keeps expanded group members as plain nodes for a partial selection 2ms
+   ÔåÆ expected 96 to be greater than 96
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > tidies an AI subtree inside an expanded group like a top-level one 3ms
+   ÔåÆ expected 160 to be less than 64
+ ├ù src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > supports collapsed and expanded group units in the same layout 6ms
+   ÔåÆ expected +0 to be 576 // Object.is equality
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ» Failed Tests 30 ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > should place the true IF 
+branch above the false branch after tidying ordered branches
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > should place the true IF 
+branch above the false branch after tidying crossed branches
+AssertionError: expected -32 to be less than -32
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:293:25
+    291|    assert(trueBranch);
+    292|    assert(falseBranch);
+    293|    expect(trueBranch.y).toBeLessThan(falseBranch.y);
+       |                         ^
+    294|   },
+    295|  );
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[1/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > should handle nodes with 
+missing dimensions
+AssertionError: expected 96 to be greater than 272
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:344:19
+    342|
+    343|   // Nodes should be positioned in a logical order (node1 -> node2 -> ÔÇª
+    344|   expect(node2.x).toBeGreaterThan(node1.x);
+       |                   ^
+    345|   expect(node3.x).toBeGreaterThan(node2.x);
+    346|  });
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[2/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > should use agent fallback 
+dimensions and preserve center alignment when unmeasured
+AssertionError: expected { x: +0, y: +0, width: 448, ÔÇª(1) } to deeply equal { x: +0, y: +0, width: 1024, ÔÇª(1) }
+
+- Expected
++ Received
+
+  {
+-   "height": 128,
+-   "width": 1024,
++   "height": 232,
++   "width": 448,
+    "x": 0,
+    "y": 0,
+  }
+
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:365:30
+    363|   assert(node);
+    364|   assert(agent);
+    365|   expect(result.boundingBox).toEqual({
+       |                              ^
+    366|    x: 0,
+    367|    y: 0,
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[3/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > should keep a measured 
+agent card on the grid with its handle on the row axis
+AssertionError: expected 384 to be 128 // Object.is equality
+
+- Expected
++ Received
+
+- 128
++ 384
+
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:393:25
+    391|   // The card's handle sits on the grid line nearest its center: 176pxÔÇª
+    392|   expect(agent.y % GRID_SIZE).toBe(0);
+    393|   expect(agent.y + 176).toBe(node.y + DEFAULT_NODE_SIZE[1] / 2);
+       |                         ^
+    394|  });
+    395|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[4/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > should handle mixed 
+scenarios with sticky notes and missing dimensions
+AssertionError: expected 94 to be greater than 96
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:498:19
+    496|   assert(node2);
+    497|
+    498|   expect(node2.x).toBeGreaterThan(node1.x);
+       |                   ^
+    499|  });
+    500|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[5/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > lays out a 
+collapsed group as a unit, tidies members and drops the chip
+AssertionError: expected +0 to be 576 // Object.is equality
+
+- Expected
++ Received
+
+- 576
++ 0
+
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:656:26
+    654|    assert(rm2);
+    655|
+    656|    expect(rm2.x - rm1.x).toBe(DEFAULT_NODE_SIZE[0] + NODE_X_SPACING);
+       |                          ^
+    657|    expect(rm2.y - rm1.y).toBe(0);
+    658|    expect(matchesGrid(result)).toBe(true);
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[6/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > keeps a 
+collapsed group clustered between its external neighbours
+AssertionError: expected 160 to be less than 64
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:690:21
+    688|    assert(rm2);
+    689|
+    690|    expect(before.x).toBeLessThan(rm1.x);
+       |                     ^
+    691|    expect(after.x).toBeGreaterThan(rm2.x);
+    692|   });
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[7/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > tidies 
+hidden members when a collapsed group chip is selected
+AssertionError: expected +0 to be 576 // Object.is equality
+
+- Expected
++ Received
+
+- 576
++ 0
+
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:705:26
+    703|    assert(rm1);
+    704|    assert(rm2);
+    705|    expect(rm2.x - rm1.x).toBe(DEFAULT_NODE_SIZE[0] + NODE_X_SPACING);
+       |                          ^
+    706|    expect(rm2.y - rm1.y).toBe(0);
+    707|   });
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[8/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > tidies a 
+collapsed branch group selected by its hidden members
+AssertionError: expected +0 to be 576 // Object.is equality
+
+- Expected
++ Received
+
+- 576
++ 0
+
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:740:45
+    738|    assert(laidOutFirst);
+    739|    assert(laidOutSecond);
+    740|    expect(laidOutSecond.x - laidOutFirst.x).toBe(DEFAULT_NODE_SIZE[0] ÔÇª
+       |                                             ^
+    741|    expect(laidOutSecond.y - laidOutFirst.y).toBe(0);
+    742|   });
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[9/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > is 
+idempotent: tidying an already tidy canvas with expanded groups moves nothing
+AssertionError: expected Map{ ÔÇª(6) } to deeply equal Map{ ÔÇª(6) }
+
+- Expected
++ Received
+
+@@ -1,25 +1,25 @@
+  Map {
+    "approval-done" => {
+      "x": 64,
+-     "y": 208,
++     "y": 224,
+    },
+    "approval-start" => {
+      "x": 64,
+      "y": 112,
+    },
+    "billing-done" => {
+      "x": 512,
+-     "y": 208,
++     "y": 224,
+    },
+    "billing-start" => {
+      "x": 512,
+      "y": 112,
+    },
+    "merge" => {
+      "x": 384,
+-     "y": 400,
++     "y": 416,
+    },
+    "source" => {
+      "x": 384,
+      "y": -96,
+    },
+
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:825:33
+    823|     const second = buildCanvas(toPositions(first)).layout('all');
+    824|
+    825|     expect(toPositions(second)).toEqual(toPositions(first));
+       |                                 ^
+    826|    },
+    827|   );
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[10/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > is 
+idempotent: tidying an already tidy canvas with collapsed groups moves nothing
+AssertionError: expected Map{ ÔÇª(6) } to deeply equal Map{ ÔÇª(6) }
+
+- Expected
++ Received
+
+@@ -1,17 +1,17 @@
+  Map {
+    "approval-done" => {
+      "x": 64,
+-     "y": 208,
++     "y": 224,
+    },
+    "approval-start" => {
+      "x": 64,
+      "y": 112,
+    },
+    "billing-done" => {
+      "x": 512,
+-     "y": 208,
++     "y": 224,
+    },
+    "billing-start" => {
+      "x": 512,
+      "y": 112,
+    },
+
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:825:33
+    823|     const second = buildCanvas(toPositions(first)).layout('all');
+    824|
+    825|     expect(toPositions(second)).toEqual(toPositions(first));
+       |                                 ^
+    826|    },
+    827|   );
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[11/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > is 
+idempotent with parallel groups when one group is collapsed
+AssertionError: expected Map{ ÔÇª(7) } to deeply equal Map{ ÔÇª(7) }
+
+- Expected
++ Received
+
+@@ -1,25 +1,25 @@
+  Map {
+    "branch-1-done" => {
+      "x": -496,
+-     "y": -272,
++     "y": -256,
+    },
+    "branch-1-start" => {
+      "x": -496,
+      "y": -368,
+    },
+    "branch-2-done" => {
+      "x": -48,
+-     "y": -272,
++     "y": -256,
+    },
+    "branch-2-start" => {
+      "x": -48,
+      "y": -368,
+    },
+    "branch-3-done" => {
+      "x": 400,
+-     "y": -112,
++     "y": -96,
+    },
+    "branch-3-start" => {
+      "x": 400,
+      "y": -208,
+    },
+
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:898:32
+    896|    const second = buildCanvas(toPositions(first)).layout('all');
+    897|
+    898|    expect(toPositions(second)).toEqual(toPositions(first));
+       |                                ^
+    899|   });
+    900|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[12/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > tidies the 
+members of an expanded group and drops the chip
+AssertionError: expected +0 to be 576 // Object.is equality
+
+- Expected
++ Received
+
+- 576
++ 0
+
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:928:26
+    926|    assert(rm1);
+    927|    assert(rm2);
+    928|    expect(rm2.x - rm1.x).toBe(DEFAULT_NODE_SIZE[0] + NODE_X_SPACING);
+       |                          ^
+    929|    expect(rm2.y - rm1.y).toBe(0);
+    930|    expect(matchesGrid(result)).toBe(true);
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[13/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > keeps an 
+internal sticky note aligned with a expanded group
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > keeps an 
+internal sticky note aligned with a collapsed group
+AssertionError: expected +0 to be 576 // Object.is equality
+
+- Expected
++ Received
+
+- 576
++ 0
+
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:998:45
+    996|     y: Math.min(laidOutFirst.y, laidOutSecond.y),
+    997|    };
+    998|    expect(laidOutSecond.x - laidOutFirst.x).toBe(DEFAULT_NODE_SIZE[0] ÔÇª
+       |                                             ^
+    999|    expect(laidOutSecond.y - laidOutFirst.y).toBe(0);
+    1000|    expect(laidOutSticky.x - memberBounds.x).toBe(sticky.position.x - gÔÇª
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[14/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > uses saved 
+sticky dimensions for hidden group members
+AssertionError: expected +0 to be 576 // Object.is equality
+
+- Expected
++ Received
+
+- 576
++ 0
+
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:1054:45
+    1052|
+    1053|    const coveredWidth = DEFAULT_NODE_SIZE[0] + NODE_X_SPACING + DEFAULÔÇª
+    1054|    expect(laidOutSecond.x - laidOutFirst.x).toBe(DEFAULT_NODE_SIZE[0] ÔÇª
+       |                                             ^
+    1055|    expect(laidOutSecond.y - laidOutFirst.y).toBe(0);
+    1056|    expect(laidOutSticky.x - laidOutFirst.x).toBe((coveredWidth - stickÔÇª
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[15/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > reserves 
+room for a sticky note that covers a group
+AssertionError: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:1253:49
+    1251|
+    1252|    // The sticky moved rigidly with the group it covers
+    1253|    expect(checkOverlap(sticky, approval.frame)).toBe(false);
+       |                                                 ^
+    1254|    expect(sticky.x - positions.get('billing-start')!.x).toBe(1072 - 12ÔÇª
+    1255|    expect(sticky.y - positions.get('billing-start')!.y).toBe(-112 - 24ÔÇª
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[16/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > falls back 
+to following covered nodes when a sticky note spans two groups
+AssertionError: expected 320 to be 400 // Object.is equality
+
+- Expected
++ Received
+
+- 400
++ 320
+
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:1270:21
+    1268|    const sticky = stickyBoxAfter(result, 1400, 900);
+    1269|
+    1270|    expect(sticky.x).toBe(400);
+       |                     ^
+    1271|
+    1272|    for (const id of expandedGroups.flatMap((group) => group.nodeIds)) {
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[17/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > keeps a 
+sticky note covering collapsed and expanded group boxes
+AssertionError: expected 320 to be 400 // Object.is equality
+
+- Expected
++ Received
+
+- 400
++ 320
+
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:1307:21
+    1305|    ).expanded;
+    1306|
+    1307|    expect(sticky.x).toBe(400);
+       |                     ^
+    1308|    expect(containsBox(sticky, approvalChip)).toBe(true);
+    1309|    expect(containsBox(sticky, billingFrame)).toBe(true);
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[18/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > grows a 
+sticky note when needed to keep covering the same group boxes
+{
+  message: '',
+  actual: null,
+  expected: undefined,
+  showDiff: false,
+  name: 'AssertionError',
+  ok: false,
+  stack: 'AssertionError: \n' +
+    '    at C:/Users/Usuario-01/Documents/Projeto Padr├úo/n8n-master/packages/frontend/editor-ui/src/features/workflows
+/canvas/composables/useCanvasLayout.test.ts:1323:4\n' +
+    '    at file:///C:/Users/Usuario-01/Documents/Projeto%20Padr%C3%A3o/n8n-master/node_modules/.pnpm/vitest@5.0.1_@ope
+ntelemetry_81b5844da54ceb396b642a41cad5b1c3/node_modules/vitest/dist/chunks/run.C5UmxDPh.js:1628:35\n' +
+    '    at file:///C:/Users/Usuario-01/Documents/Projeto%20Padr%C3%A3o/n8n-master/node_modules/.pnpm/vitest@5.0.1_@ope
+ntelemetry_81b5844da54ceb396b642a41cad5b1c3/node_modules/vitest/dist/chunks/run.C5UmxDPh.js:2783:26\n' +
+    '    at file:///C:/Users/Usuario-01/Documents/Projeto%20Padr%C3%A3o/n8n-master/node_modules/.pnpm/vitest@5.0.1_@ope
+ntelemetry_81b5844da54ceb396b642a41cad5b1c3/node_modules/vitest/dist/chunks/run.C5UmxDPh.js:3319:20\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at runWithCancel (file:///C:/Users/Usuario-01/Documents/Projeto%20Padr%C3%A3o/n8n-master/node_modules/.pnpm/vi
+test@5.0.1_@opentelemetry_81b5844da54ceb396b642a41cad5b1c3/node_modules/vitest/dist/chunks/run.C5UmxDPh.js:3314:10)\n' 
++
+    '    at file:///C:/Users/Usuario-01/Documents/Projeto%20Padr%C3%A3o/n8n-master/node_modules/.pnpm/vitest@5.0.1_@ope
+ntelemetry_81b5844da54ceb396b642a41cad5b1c3/node_modules/vitest/dist/chunks/run.C5UmxDPh.js:3299:20\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at runWithTimeout (file:///C:/Users/Usuario-01/Documents/Projeto%20Padr%C3%A3o/n8n-master/node_modules/.pnpm/v
+itest@5.0.1_@opentelemetry_81b5844da54ceb396b642a41cad5b1c3/node_modules/vitest/dist/chunks/run.C5UmxDPh.js:3257:10)\n'
+ +
+    '    at file:///C:/Users/Usuario-01/Documents/Projeto%20Padr%C3%A3o/n8n-master/node_modules/.pnpm/vitest@5.0.1_@ope
+ntelemetry_81b5844da54ceb396b642a41cad5b1c3/node_modules/vitest/dist/chunks/run.C5UmxDPh.js:3876:64',
+  stacks: [
+    {
+      method: '',
+      file: 'C:/Users/Usuario-01/Documents/Projeto 
+Padr├úo/n8n-master/packages/frontend/editor-ui/src/features/workflows/canvas/composables/useCanvasLayout.test.ts',
+      line: 1323,
+      column: 4
+    }
+  ]
+}
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:1323:4
+
+ Test Files  1 failed (1)
+      Tests  30 failed | 17 passed (47)
+   Start at  00:04:16
+   Duration  10.51s (transform 58%, import 22%, setup 9%, environment 8%, tests 2%)
+
+  Transform  transforming modules took 5.97s ┬À 58% of tracked time, re-done on every run
+             persist transforms across runs with fsModuleCache: true
+             learn more: https://vitest.dev/guide/improving-performance#caching-between-reruns
+
+    1321|
+    1322|    assert(stickyResult);
+    1323|    assert(stickyResult.height !== undefined);
+       |    ^
+    1324|    expect(stickyResult.height).toBeGreaterThan(480);
+    1325|    expect(stickyResult.width).toBe(1400);
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[19/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > leaves a 
+sticky note out when it also covers a partial group member
+AssertionError: expected [ 'approval-start', 'approval-done' ] to include 'sticky'
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:1397:51
+    1395|     nodeIdsFilter: ['approval-start', 'approval-done'],
+    1396|    });
+    1397|    expect(groupOnly.nodes.map((node) => node.id)).toContain('sticky');
+       |                                                   ^
+    1398|
+    1399|    const { layout } = createStickyOverParallelGroupsSetup({
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[20/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > keeps a 
+chain through an expanded group on the connection axis without a covering sticky note
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > keeps a 
+chain through an expanded group on the connection axis with a covering sticky note
+AssertionError: expected 352 to be 144 // Object.is equality
+
+- Expected
++ Received
+
+- 144
++ 352
+
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:1458:36
+    1456|
+    1457|     const y = positions.get('before')!.y;
+    1458|     expect(positions.get('m1')!.y).toBe(y);
+       |                                    ^
+    1459|     expect(positions.get('m2')!.y).toBe(y);
+    1460|     expect(positions.get('after')!.y).toBe(y);
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[21/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > keeps an 
+expanded group clustered between its external neighbours
+AssertionError: expected 160 to be less than 64
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:1496:27
+    1494|    assert(rm2);
+    1495|
+    1496|    expect(beforeResult.x).toBeLessThan(rm1.x);
+       |                           ^
+    1497|    expect(afterResult.x).toBeGreaterThan(rm2.x);
+    1498|    expect(rm2.x - rm1.x).toBe(DEFAULT_NODE_SIZE[0] + NODE_X_SPACING);
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[22/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > lays out 
+expanded groups without overlapping their frames
+AssertionError: expected [ 'Approval overlaps Billing' ] to deeply equal []
+
+- Expected
++ Received
+
+- []
++ [
++   "Approval overlaps Billing",
++ ]
+
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:1508:49
+    1506|    const positions = new Map(result.nodes.map((node) => [node.id, { x:ÔÇª
+    1507|
+    1508|    expect(findOverlappingGroupPairs(positions)).toEqual([]);
+       |                                                 ^
+    1509|    expect(
+    1510|     computeNodeGroupLayoutPushes({
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[23/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > spaces 
+expanded group frames by the size of their tidied members
+AssertionError: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:1567:66
+    1565|    };
+    1566|
+    1567|    expect(checkOverlap(frameAfter('top'), frameAfter('bottom'))).toBe(ÔÇª
+       |                                                                  ^
+    1568|   });
+    1569|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[24/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > keeps 
+expanded group members as plain nodes for a partial selection
+AssertionError: expected 96 to be greater than 96
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:1597:26
+    1595|    assert(rm1);
+    1596|    assert(afterResult);
+    1597|    expect(afterResult.x).toBeGreaterThan(rm1.x);
+       |                          ^
+    1598|   });
+    1599|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[25/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > tidies an 
+AI subtree inside an expanded group like a top-level one
+AssertionError: expected 160 to be less than 64
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:1652:27
+    1650|    // The tool hangs below its agent, and the group stays between its ÔÇª
+    1651|    expect(resultTool.y).toBeGreaterThan(resultAgent.y);
+    1652|    expect(resultBefore.x).toBeLessThan(resultAgent.x);
+       |                           ^
+    1653|    expect(resultAfter.x).toBeGreaterThan(resultAgent.x);
+    1654|    expect(matchesGrid(result)).toBe(true);
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[26/30]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > supports 
+collapsed and expanded group units in the same layout
+AssertionError: expected +0 to be 576 // Object.is equality
+
+- Expected
++ Received
+
+- 576
++ 0
+
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:1701:26
+    1699|    assert(re2);
+    1700|
+    1701|    expect(rc2.x - rc1.x).toBe(DEFAULT_NODE_SIZE[0] + NODE_X_SPACING);
+       |                          ^
+    1702|    expect(rc2.y - rc1.y).toBe(0);
+    1703|    expect(re2.x - re1.x).toBe(DEFAULT_NODE_SIZE[0] + NODE_X_SPACING);
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[27/30]ÔÄ»
+

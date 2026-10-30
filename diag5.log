@@ -1,0 +1,295 @@
+﻿node.exe : [33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned 
+to become the default in a future major version of Vite:
+No C:\Users\Usuario-01\AppData\Local\Temp\opencode\pnpm-bin\pnpm.ps1:24 caractere:5
++     & "node$exe"  "$basedir/../../../../../../../Program Files/nodejs ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([33m(!) Your V...ersion of Vite::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  - `__dirname` (vite.config.mts:28:29). Use `import.meta.dirname` instead
+  - import "../@n8n/design-system/src/icons/lucide/vite" without a file extension (vite.config.mts:12:35). Add the 
+file extension
+  - import "./vite/i18n-locales-hmr-helpers" without a file extension (vite.config.mts:15:48). Add the file extension
+  - import "../../@n8n/constants/src/csp" without a file extension (vite.config.mts:20:40). Add the file extension
+  - ESM syntax in a file loaded as CommonJS (../../@n8n/constants/src/csp.ts:6:1). Use a `.mjs` extension or set 
+`"type": "module"` in the closest package.json
+  - import "./bucket" without a file extension (../@n8n/design-system/src/icons/lucide/vite.ts:5:46). Add the file 
+extension
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.[39m
+
+ RUN  v5.0.1 C:/Users/Usuario-01/Documents/Projeto Padr├úo/n8n-master/packages/frontend/editor-ui
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts (9 tests | 9 failed) 92ms
+   ÔØ» diag values (9)
+     ├ù measured agent alignment 31ms
+     ├ù expanded group frames after tidy 11ms
+     ├ù frames spaced by agent members 9ms
+     ├ù reserves room: sticky over billing only 8ms
+     ├ù sticky spanning two groups 8ms
+     ├ù grows a sticky note 6ms
+     ├ù partial group member sticky 8ms
+     ├ù chain through expanded group 4ms
+     ├ù AI subtree in expanded group 5ms
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ» Failed Tests 9 ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag values > measured agent alignment
+AssertionError: expected { node: { x: 272, y: 96 }, ÔÇª(2) } to deeply equal {}
+
+- Expected
++ Received
+
+- {}
++ {
++   "agent": {
++     "x": 96,
++     "y": 208,
++   },
++   "bbox": {
++     "height": 468,
++     "width": 448,
++     "x": 0,
++     "y": 0,
++   },
++   "node": {
++     "x": 272,
++     "y": 96,
++   },
++ }
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:220:6
+    218|    agent: agent && { x: agent.x, y: agent.y },
+    219|    bbox: result.boundingBox,
+    220|   }).toEqual({});
+       |      ^
+    221|  });
+    222|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[1/9]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag values > expanded group frames after tidy
+AssertionError: expected { ÔÇª(2) } to deeply equal {}
+
+- Expected
++ Received
+
+- {}
++ {
++   "frames": "Approval=[x:8 y:8 w:560 h:368 endX:568 endY:376]  Billing=[x:456 y:8 w:560 h:368 endX:1016 endY:376]",
++   "positions": "approval-done=(64,224)  approval-start=(64,112)  billing-done=(512,224)  billing-start=(512,112)  
+merge=(384,432)  source=(384,-96)",
++ }
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:258:6
+    256|    positions: fmtPositions(positions),
+    257|    frames: fmtBoxes(computeGroupFrames(positions)),
+    258|   }).toEqual({});
+       |      ^
+    259|  });
+    260|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[2/9]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag values > frames spaced by agent members
+AssertionError: expected { ÔÇª(3) } to deeply equal {}
+
+- Expected
++ Received
+
+- {}
++ {
++   "bottomFrame": {
++     "height": 320,
++     "width": 560,
++     "x": 456,
++     "y": 8,
++   },
++   "positions": "bottom=(512,112)  merge=(384,320)  source=(384,-96)  top=(64,112)",
++   "topFrame": {
++     "height": 320,
++     "width": 560,
++     "x": 8,
++     "y": 8,
++   },
++ }
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:310:6
+    308|    topFrame: frameAfter('top'),
+    309|    bottomFrame: frameAfter('bottom'),
+    310|   }).toEqual({});
+       |      ^
+    311|  });
+    312|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[3/9]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag values > reserves room: sticky over billing 
+only
+AssertionError: expected { ÔÇª(3) } to deeply equal {}
+
+- Expected
++ Received
+
+- {}
++ {
++   "frames": "Approval=[x:328 y:72 w:560 h:368 endX:888 endY:440]  Billing=[x:776 y:72 w:560 h:368 endX:1336 
+endY:440]",
++   "positions": "approval-done=(384,288)  approval-start=(384,176)  billing-done=(832,288)  billing-start=(832,176)  
+sticky=(752,-160)  trigger=(704,-48)",
++   "sticky": {
++     "h": undefined,
++     "w": undefined,
++     "x": 752,
++     "y": -160,
++   },
++ }
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:327:6
+    325|    sticky: sticky && { x: sticky.x, y: sticky.y, w: sticky.width, h: sÔÇª
+    326|    frames: fmtBoxes(computeGroupFrames(positions)),
+    327|   }).toEqual({});
+       |      ^
+    328|  });
+    329|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[4/9]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag values > sticky spanning two groups
+AssertionError: expected { ÔÇª(3) } to deeply equal {}
+
+- Expected
++ Received
+
+- {}
++ {
++   "frames": "Approval=[x:424 y:88 w:560 h:368 endX:984 endY:456]  Billing=[x:1768 y:168 w:560 h:368 endX:2328 
+endY:536]",
++   "positions": "approval-done=(480,304)  approval-start=(480,192)  billing-done=(1824,384)  billing-start=(1824,272) 
+ sticky=(320,-80)  trigger=(1440,-192)",
++   "sticky": {
++     "h": undefined,
++     "w": undefined,
++     "x": 320,
++     "y": -80,
++   },
++ }
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:344:6
+    342|    sticky: sticky && { x: sticky.x, y: sticky.y, w: sticky.width, h: sÔÇª
+    343|    frames: fmtBoxes(computeGroupFrames(positions)),
+    344|   }).toEqual({});
+       |      ^
+    345|  });
+    346|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[5/9]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag values > grows a sticky note
+AssertionError: expected { ÔÇª(3) } to deeply equal {}
+
+- Expected
++ Received
+
+- {}
++ {
++   "frames": "Approval=[x:424 y:88 w:560 h:368 endX:984 endY:456]  Billing=[x:1768 y:104 w:560 h:368 endX:2328 
+endY:472]",
++   "positions": "approval-done=(480,304)  approval-start=(480,192)  billing-done=(1824,320)  billing-start=(1824,208) 
+ sticky=(320,64)  trigger=(1440,-48)",
++   "sticky": {
++     "h": undefined,
++     "w": undefined,
++     "x": 320,
++     "y": 64,
++   },
++ }
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:361:6
+    359|    sticky: sticky && { x: sticky.x, y: sticky.y, w: sticky.width, h: sÔÇª
+    360|    frames: fmtBoxes(computeGroupFrames(positions)),
+    361|   }).toEqual({});
+       |      ^
+    362|  });
+    363|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[6/9]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag values > partial group member sticky
+
+ Test Files  1 failed (1)
+      Tests  9 failed (9)
+   Start at  01:09:38
+   Duration  10.85s (transform 58%, import 24%, setup 9%, environment 8%, tests 1%)
+
+  Transform  transforming modules took 6.20s ┬À 58% of tracked time, re-done on every run
+             persist transforms across runs with fsModuleCache: true
+             learn more: https://vitest.dev/guide/improving-performance#caching-between-reruns
+
+AssertionError: expected { groupOnlyIds: [ ÔÇª(2) ], ÔÇª(4) } to deeply equal {}
+
+- Expected
++ Received
+
+- {}
++ {
++   "groupOnlyIds": [
++     "approval-done",
++     "approval-start",
++   ],
++   "groupOnlyPositions": "approval-done=(560,192)  approval-start=(560,80)",
++   "secondFrames": "Approval=[x:504 y:-24 w:560 h:368 endX:1064 endY:344]  Billing=[x:456 y:408 w:560 h:256 endX:1016 
+endY:664]",
++   "secondIds": [
++     "approval-done",
++     "approval-start",
++     "billing-start",
++   ],
++   "secondPositions": "approval-done=(560,192)  approval-start=(560,80)  billing-start=(512,512)",
++ }
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:385:6
+    383|    secondPositions: fmtPositions(toPositions(second)),
+    384|    secondFrames: fmtBoxes(computeGroupFrames(toPositions(second))),
+    385|   }).toEqual({});
+       |      ^
+    386|  });
+    387|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[7/9]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag values > chain through expanded group
+AssertionError: expected 'after=(160,672)  before=(160,144)  m1ÔÇª' to deeply equal ''
+
+- Expected
++ Received
+
++ after=(160,672)  before=(160,144)  m1=(64,352)  m2=(64,464)
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:413:45
+    411|   );
+    412|   const result = layout('all');
+    413|   expect(fmtPositions(toPositions(result))).toEqual('');
+       |                                             ^
+    414|  });
+    415|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[8/9]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag values > AI subtree in expanded group
+AssertionError: expected 'after=(160,640)  aiAgent=(64,208)  aiÔÇª' to deeply equal ''
+
+- Expected
++ Received
+
++ after=(160,640)  aiAgent=(64,208)  aiTool=(64,432)  before=(160,0)
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:455:45
+    453|   );
+    454|   const result = layout('all');
+    455|   expect(fmtPositions(toPositions(result))).toEqual('');
+       |                                             ^
+    456|  });
+    457| });
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[9/9]ÔÄ»
+

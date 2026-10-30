@@ -1,0 +1,1082 @@
+[33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - `__dirname` (vite.config.mts:28:29). Use `import.meta.dirname` instead
+  - import "../@n8n/design-system/src/icons/lucide/vite" without a file extension (vite.config.mts:12:35). Add the file extension
+  - import "./vite/i18n-locales-hmr-helpers" without a file extension (vite.config.mts:15:48). Add the file extension
+  - import "../../@n8n/constants/src/csp" without a file extension (vite.config.mts:20:40). Add the file extension
+  - ESM syntax in a file loaded as CommonJS (../../@n8n/constants/src/csp.ts:6:1). Use a `.mjs` extension or set `"type": "module"` in the closest package.json
+  - import "./bucket" without a file extension (../@n8n/design-system/src/icons/lucide/vite.ts:5:46). Add the file extension
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.[39m
+
+A PostCSS plugin did not pass the `from` option to `postcss.parse`. This may cause imported assets to be incorrectly transformed. If you've recently added a PostCSS plugin that raised this warning, please contact the package author to fix the issue.
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use color.mix instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+63 │ ┌           mix(
+64 │ │             $mix-color,
+65 │ │             map.get($colors, $type, 'base'),
+66 │ │             math.percentage(math.div($number, 10))
+67 │ │           ),
+   │ └───────────^
+   ╵
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\common\var.scss 63:11   set-color-mix-level()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\common\var.scss 87:5    @use
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\mixins.scss 2:1  @use
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\slider.scss 3:1         @use
+    Z:\packages\frontend\@n8n\design-system\src\css\slider.scss 7:1                                                                               @use
+    Z:\packages\frontend\@n8n\design-system\src\css\index.scss 14:1                                                                               root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use meta.inspect instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+5 │   $selector: inspect($selector);
+  │              ^^^^^^^^^^^^^^^^^^
+  ╵
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\function.scss 5:14   selectorToString()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\function.scss 11:14  containsModifier()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\function.scss 41:11  hitAllSpecialNestRule()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\mixins.scss 77:7     e()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\slider.scss 28:3            @content
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\mixins.scss 60:5     b()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\slider.scss 22:1            @use
+    Z:\packages\frontend\@n8n\design-system\src\css\slider.scss 7:1                                                                                   @use
+    Z:\packages\frontend\@n8n\design-system\src\css\index.scss 14:1                                                                                   root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.slice instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+6 │   $selector: str-slice($selector, 2, -2);
+  │              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\function.scss 6:14   selectorToString()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\function.scss 11:14  containsModifier()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\function.scss 41:11  hitAllSpecialNestRule()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\mixins.scss 77:7     e()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\slider.scss 28:3            @content
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\mixins.scss 60:5     b()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\slider.scss 22:1            @use
+    Z:\packages\frontend\@n8n\design-system\src\css\slider.scss 7:1                                                                                   @use
+    Z:\packages\frontend\@n8n\design-system\src\css\index.scss 14:1                                                                                   root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.index instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+13 │   @if str-index($selector, config.$modifier-separator) {
+   │       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\function.scss 13:7   containsModifier()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\function.scss 41:11  hitAllSpecialNestRule()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\mixins.scss 77:7     e()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\slider.scss 28:3            @content
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\mixins.scss 60:5     b()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\slider.scss 22:1            @use
+    Z:\packages\frontend\@n8n\design-system\src\css\slider.scss 7:1                                                                                   @use
+    Z:\packages\frontend\@n8n\design-system\src\css\index.scss 14:1                                                                                   root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.index instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+23 │   @if str-index($selector, '.' + config.$state-prefix) {
+   │       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\function.scss 23:7   containWhenFlag()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\function.scss 41:42  hitAllSpecialNestRule()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\mixins.scss 77:7     e()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\slider.scss 28:3            @content
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\mixins.scss 60:5     b()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\slider.scss 22:1            @use
+    Z:\packages\frontend\@n8n\design-system\src\css\slider.scss 7:1                                                                                   @use
+    Z:\packages\frontend\@n8n\design-system\src\css\index.scss 14:1                                                                                   root stylesheet
+
+WARNING: 1 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+
+[2m16:34:40[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mModule "timers" has been externalized for browser compatibility. Cannot access "timers.setImmediate" in client code. See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+[2m16:34:41[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <AppCommandBar> 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:34:41[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: Missing required prop: "collapsed" 
+  at <Logo size="large" release-channel=undefined > 
+  at <AuthView key=1 form= { title: "Sign in", buttonText: "Sign in", redirectText: "Forgot my password", redirectLink: "/forgot-password", inputs: [ { name: "emailOrLdapLoginId", properties: [Object] }, { name: "password", properties: [Object] } ] } form-loading=false  ... > 
+  at <SigninView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< undefined > > 
+  at <RouterView> 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <AuthLayout key=2 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=2 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:34:41[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <AskAssistantBuild key=0 ref="askAssistantBuildRef" onClose=fn<onClose> > 
+  at <ResizeWrapper supported-directions= [ "left" ] width=400 min-width=380  ... > 
+  at <BaseTransition onAfterEnter=fn<onSlideEnterComplete> appear=false persisted=true  ... > 
+  at <Transition enter-active-class="_slideEnterActive_fcz0b_6" enter-from-class="_slideFrom_fcz0b_14" leave-active-class="_slideLeaveActive_fcz0b_10"  ... > 
+  at <AssistantsHub> 
+  at <AppChatPanel key=0 layout-ref= {} > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+The request id "Z:\packages\frontend\@n8n\design-system\assets\fonts\Geist-Variable.woff2" is outside of Vite serving allow list.
+
+- C:/Users/Usuario-01/Documents/Projeto Padrão/n8n-master
+- C:/Users/Usuario-01/Documents/Projeto Padrão/n8n-master/node_modules/.pnpm
+
+Refer to docs https://vite.dev/config/server-options.html#server-fs-allow for configurations and more details.
+
+[2m16:35:24[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: inject() can only be used inside setup() or functional components.
+[2m16:35:27[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< null > > 
+  at <RouterView> 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <AuthLayout key=2 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=2 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:35:27[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: Unhandled error during execution of watcher getter 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< null > > 
+  at <RouterView> 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <AuthLayout key=2 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=2 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:35:27[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: Unhandled error during execution of setup function 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< null > > 
+  at <RouterView> 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <AuthLayout key=2 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=2 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:35:27[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: Unhandled error during execution of component update 
+  at <RouterView> 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <AuthLayout key=2 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=2 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:35:27[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: uncaught error during route navigation:
+[2m16:35:27[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError: injectNDVStore() was accessed without an active workflow document store. Derive the NDV store from injectWorkflowDocumentStore().value.documentId in contexts that can run without a loaded workflow.
+    at ComputedRefImpl.fn (http://localhost:8080/@fs/Z:/packages/frontend/editor-ui/src/features/ndv/shared/ndv.store.ts:371:10)
+    at refreshComputed (http://localhost:8080/node_modules/.vite/deps/runtime-dom.esm-bundler-D7EodKRb.js?v=213c318a:622:26)
+    at get value (http://localhost:8080/node_modules/.vite/deps/runtime-dom.esm-bundler-D7EodKRb.js?v=213c318a:1943:4)
+    at http://localhost:8080/@fs/Z:/packages/frontend/editor-ui/src/app/views/NodeView.vue:1379:24
+    at callWithErrorHandling (http://localhost:8080/node_modules/.vite/deps/runtime-dom.esm-bundler-D7EodKRb.js?v=213c318a:2074:31)
+    at callWithAsyncErrorHandling (http://localhost:8080/node_modules/.vite/deps/runtime-dom.esm-bundler-D7EodKRb.js?v=213c318a:2081:15)
+    at baseWatchOptions.call (http://localhost:8080/node_modules/.vite/deps/runtime-dom.esm-bundler-D7EodKRb.js?v=213c318a:2527:46)
+    at ReactiveEffect.getter [as fn] (http://localhost:8080/node_modules/.vite/deps/runtime-dom.esm-bundler-D7EodKRb.js?v=213c318a:1200:33)
+    at ReactiveEffect.run (http://localhost:8080/node_modules/.vite/deps/runtime-dom.esm-bundler-D7EodKRb.js?v=213c318a:1463:17)
+    at watch$1 (http://localhost:8080/node_modules/.vite/deps/runtime-dom.esm-bundler-D7EodKRb.js?v=213c318a:1278:26)
+[2m16:35:28[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [31m[Unhandled rejection] [1mError[22m: injectNDVStore() was accessed without an active workflow document store. Derive the NDV store from injectWorkflowDocumentStore().value.documentId in contexts that can run without a loaded workflow.
+[39m > ComputedRefImpl.fn Z:/packages/frontend/editor-ui/src/features/ndv/shared/ndv.store.ts:504:9
+    502 |  		const documentStore = workflowDocumentStore.value;
+    503 |  		if (!documentStore) {
+    504 |  			throw new Error(
+        |           ^
+    505 |  				'injectNDVStore() was accessed without an active workflow document store. ' +
+    506 |  					'Derive the NDV store from injectWorkflowDocumentStore().value.documentId in contexts ' +
+ > refreshComputed ../../../node_modules/.pnpm/@vue+reactivity@3.5.26/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js:391:27
+ > get value ../../../node_modules/.pnpm/@vue+reactivity@3.5.26/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js:1701:4
+ > Z:/packages/frontend/editor-ui/src/app/views/NodeView.vue:1978:16
+ > callWithErrorHandling ../../../node_modules/.pnpm/@vue+runtime-core@3.5.26/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js:199:32
+ > callWithAsyncErrorHandling ../../../node_modules/.pnpm/@vue+runtime-core@3.5.26/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js:206:16
+ > baseWatchOptions.call ../../../node_modules/.pnpm/@vue+runtime-core@3.5.26/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js:880:46
+ > ReactiveEffect.getter [as fn] ../../../node_modules/.pnpm/@vue+reactivity@3.5.26/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js:1820:28
+ > ReactiveEffect.run ../../../node_modules/.pnpm/@vue+reactivity@3.5.26/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js:237:18
+ > watch$1 ../../../node_modules/.pnpm/@vue+reactivity@3.5.26/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js:1921:24
+
+[2m16:35:28[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [31m[Unhandled rejection] [1mError[22m: injectNDVStore() was accessed without an active workflow document store. Derive the NDV store from injectWorkflowDocumentStore().value.documentId in contexts that can run without a loaded workflow.
+[39m > ComputedRefImpl.fn Z:/packages/frontend/editor-ui/src/features/ndv/shared/ndv.store.ts:504:9
+    502 |  		const documentStore = workflowDocumentStore.value;
+    503 |  		if (!documentStore) {
+    504 |  			throw new Error(
+        |           ^
+    505 |  				'injectNDVStore() was accessed without an active workflow document store. ' +
+    506 |  					'Derive the NDV store from injectWorkflowDocumentStore().value.documentId in contexts ' +
+ > refreshComputed ../../../node_modules/.pnpm/@vue+reactivity@3.5.26/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js:391:27
+ > get value ../../../node_modules/.pnpm/@vue+reactivity@3.5.26/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js:1701:4
+ > Z:/packages/frontend/editor-ui/src/app/views/NodeView.vue:1978:16
+ > callWithErrorHandling ../../../node_modules/.pnpm/@vue+runtime-core@3.5.26/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js:199:32
+ > callWithAsyncErrorHandling ../../../node_modules/.pnpm/@vue+runtime-core@3.5.26/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js:206:16
+ > baseWatchOptions.call ../../../node_modules/.pnpm/@vue+runtime-core@3.5.26/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js:880:46
+ > ReactiveEffect.getter [as fn] ../../../node_modules/.pnpm/@vue+reactivity@3.5.26/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js:1820:28
+ > ReactiveEffect.run ../../../node_modules/.pnpm/@vue+reactivity@3.5.26/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js:237:18
+ > watch$1 ../../../node_modules/.pnpm/@vue+reactivity@3.5.26/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js:1921:24
+
+[2m16:35:31[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:35:31[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:35:31[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <LogsPanel> 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:35:32[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:35:32[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< undefined > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:35:33[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <CanvasNodeTrigger key=2 name="When clicking ‘Execute workflow’" type="n8n-nodes-base.manualTrigger"  ... > 
+  at <CanvasNode id="95e7127b-ec64-4138-8105-85b1a8b23c79" type="canvas-node" data= { id: "95e7127b-ec64-4138-8105-85b1a8b23c79", name: "When clicking ‘Execute workflow’", subtitle: "", type: "n8n-nodes-base.manualTrigger", typeVersion: 1, disabled: undefined, connections: { inputs: {}, outputs: { main: [Array] } }, issues: { validation: [], visible: false }, execution: { status: undefined, waiting: undefined, waitingForNext: false, running: false }, runData: { outputMap: undefined, iterations: 0, visible: false }, render: { type: "default", options: { trigger: true, configuration: false, configurable: false, tooltip: undefined, dirtiness: undefined, icon: [Object], placeholder: false, deprecated: false, deprecatedReplacementName: undefined } } }  ... > 
+  at <RenderFnWithContext id="95e7127b-ec64-4138-8105-85b1a8b23c79" type="canvas-node" data= { id: "95e7127b-ec64-4138-8105-85b1a8b23c79", name: "When clicking ‘Execute workflow’", subtitle: "", type: "n8n-nodes-base.manualTrigger", typeVersion: 1, disabled: undefined, connections: { inputs: {}, outputs: { main: [Array] } }, issues: { validation: [], visible: false }, execution: { status: undefined, waiting: undefined, waitingForNext: false, running: false }, runData: { outputMap: undefined, iterations: 0, visible: false }, render: { type: "default", options: { trigger: true, configuration: false, configurable: false, tooltip: undefined, dirtiness: undefined, icon: [Object], placeholder: false, deprecated: false, deprecatedReplacementName: undefined } } }  ... > 
+  at <Node id="95e7127b-ec64-4138-8105-85b1a8b23c79" key="95e7127b-ec64-4138-8105-85b1a8b23c79" resize-observer= {} > 
+  at <Nodes> 
+  at <Transform> 
+  at <Pane is-selecting=true selection-key-pressed=true class="" > 
+  at <Viewport> 
+  at <VueFlow id="5SitmDOGwlnoDoUI" nodes= [ { id: "95e7127b-ec64-4138-8105-85b1a8b23c79", label: "When clicking ‘Execute workflow’", type: "canvas-node", position: { x: -144, y: 0 }, data: { id: "95e7127b-ec64-4138-8105-85b1a8b23c79", name: "When clicking ‘Execute workflow’", subtitle: "", type: "n8n-nodes-base.manualTrigger", typeVersion: 1, disabled: undefined, connections: [Object], issues: [Object], execution: [Object], runData: [Object], render: [Object] }, draggable: undefined, hidden: undefined }, { id: "4c6fb823-a19a-4563-bac1-5f97741c79ee", label: "Code in JavaScript", type: "canvas-node", position: { x: -144, y: 96 }, data: { id: "4c6fb823-a19a-4563-bac1-5f97741c79ee", name: "Code in JavaScript", subtitle: "", type: "n8n-nodes-base.code", typeVersion: 2, disabled: undefined, connections: [Object], issues: [Object], execution: [Object], runData: [Object], render: [Object] }, draggable: undefined, hidden: undefined } ] edges= [ { id: "[95e7127b-ec64-4138-8105-85b1a8b23c79/outputs/main/0][4c6fb823-a19a-4563-bac1-5f97741c79ee/inputs/main/0]", source: "95e7127b-ec64-4138-8105-85b1a8b23c79", target: "4c6fb823-a19a-4563-bac1-5f97741c79ee", sourceHandle: "outputs/main/0", targetHandle: "inputs/main/0", data: { source: [Object], target: [Object], status: undefined }, type: "canvas-edge", label: "", markerEnd: "arrowclosed" } ]  ... > 
+  at <Canvas id="5SitmDOGwlnoDoUI" ref="canvas" nodes= [ { id: "95e7127b-ec64-4138-8105-85b1a8b23c79", label: "When clicking ‘Execute workflow’", type: "canvas-node", position: { x: -144, y: 0 }, data: { id: "95e7127b-ec64-4138-8105-85b1a8b23c79", name: "When clicking ‘Execute workflow’", subtitle: "", type: "n8n-nodes-base.manualTrigger", typeVersion: 1, disabled: undefined, connections: [Object], issues: [Object], execution: [Object], runData: [Object], render: [Object] }, draggable: undefined, hidden: undefined }, { id: "4c6fb823-a19a-4563-bac1-5f97741c79ee", label: "Code in JavaScript", type: "canvas-node", position: { x: -144, y: 96 }, data: { id: "4c6fb823-a19a-4563-bac1-5f97741c79ee", name: "Code in JavaScript", subtitle: "", type: "n8n-nodes-base.code", typeVersion: 2, disabled: undefined, connections: [Object], issues: [Object], execution: [Object], runData: [Object], render: [Object] }, draggable: undefined, hidden: undefined } ]  ... > 
+  at <WorkflowCanvas key=0 id="5SitmDOGwlnoDoUI" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:35:35[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[intlify] Not found 'nodeCreator.subcategoryInfos.appTriggerNodes' key in 'en' locale messages.
+[2m16:35:35[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[intlify] Not found 'nodeCreator.subcategoryInfos.otherTriggerNodes' key in 'en' locale messages.
+[2m16:40:24[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError: Only one 'Manual Trigger' node is allowed in a workflow
+    at checkMaxNodesOfTypeReached (http://localhost:8080/@fs/Z:/packages/frontend/editor-ui/src/app/composables/useCanvasOperations.ts:826:10)
+    at addNode (http://localhost:8080/@fs/Z:/packages/frontend/editor-ui/src/app/composables/useCanvasOperations.ts:843:3)
+    at addNodes (http://localhost:8080/@fs/Z:/packages/frontend/editor-ui/src/app/composables/useCanvasOperations.ts:771:21)
+    at async addNodesAndConnections (http://localhost:8080/@fs/Z:/packages/frontend/editor-ui/src/app/composables/useCanvasOperations.ts:2595:22)
+    at async onAddNodesAndConnections (http://localhost:8080/@fs/Z:/packages/frontend/editor-ui/src/app/views/NodeView.vue:679:27)
+The request id "Z:\packages\frontend\@n8n\design-system\assets\fonts\Geist-Italic-Variable.woff2" is outside of Vite serving allow list.
+[2m16:40:26[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError: Only one 'Manual Trigger' node is allowed in a workflow
+    at checkMaxNodesOfTypeReached (http://localhost:8080/@fs/Z:/packages/frontend/editor-ui/src/app/composables/useCanvasOperations.ts:826:10)
+    at addNode (http://localhost:8080/@fs/Z:/packages/frontend/editor-ui/src/app/composables/useCanvasOperations.ts:843:3)
+    at addNodes (http://localhost:8080/@fs/Z:/packages/frontend/editor-ui/src/app/composables/useCanvasOperations.ts:771:21)
+    at async addNodesAndConnections (http://localhost:8080/@fs/Z:/packages/frontend/editor-ui/src/app/composables/useCanvasOperations.ts:2595:22)
+    at async onAddNodesAndConnections (http://localhost:8080/@fs/Z:/packages/frontend/editor-ui/src/app/views/NodeView.vue:679:27)
+[2m16:40:39[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:40:39[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:40:39[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:40:40[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:40:40[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:40:40[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:40:40[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:40:40[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:40:42[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:40:42[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:40:42[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <LogsPanel> 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:40:42[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:40:43[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:40:43[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< undefined > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:40:45[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <CanvasNodeTrigger key=2 name="When clicking ‘Execute workflow’" type="n8n-nodes-base.manualTrigger"  ... > 
+  at <CanvasNode id="124f27b4-4a59-4c92-bcfe-7e82a084ba0b" type="canvas-node" data= { id: "124f27b4-4a59-4c92-bcfe-7e82a084ba0b", name: "When clicking ‘Execute workflow’", subtitle: "", type: "n8n-nodes-base.manualTrigger", typeVersion: 1, disabled: false, connections: { inputs: {}, outputs: {} }, issues: { validation: [], visible: false }, execution: { status: undefined, waiting: undefined, waitingForNext: false, running: false }, runData: { outputMap: undefined, iterations: 0, visible: false }, render: { type: "default", options: { trigger: true, configuration: false, configurable: false, tooltip: undefined, dirtiness: undefined, icon: [Object], placeholder: false, deprecated: false, deprecatedReplacementName: undefined } } }  ... > 
+  at <RenderFnWithContext id="124f27b4-4a59-4c92-bcfe-7e82a084ba0b" type="canvas-node" data= { id: "124f27b4-4a59-4c92-bcfe-7e82a084ba0b", name: "When clicking ‘Execute workflow’", subtitle: "", type: "n8n-nodes-base.manualTrigger", typeVersion: 1, disabled: false, connections: { inputs: {}, outputs: {} }, issues: { validation: [], visible: false }, execution: { status: undefined, waiting: undefined, waitingForNext: false, running: false }, runData: { outputMap: undefined, iterations: 0, visible: false }, render: { type: "default", options: { trigger: true, configuration: false, configurable: false, tooltip: undefined, dirtiness: undefined, icon: [Object], placeholder: false, deprecated: false, deprecatedReplacementName: undefined } } }  ... > 
+  at <Node id="124f27b4-4a59-4c92-bcfe-7e82a084ba0b" key="124f27b4-4a59-4c92-bcfe-7e82a084ba0b" resize-observer= {} > 
+  at <Nodes> 
+  at <Transform> 
+  at <Pane is-selecting=true selection-key-pressed=true class="" > 
+  at <Viewport> 
+  at <VueFlow id="JWFleSZhitb3afgl" nodes= [ { id: "124f27b4-4a59-4c92-bcfe-7e82a084ba0b", label: "When clicking ‘Execute workflow’", type: "canvas-node", position: { x: 23, y: 0 }, data: { id: "124f27b4-4a59-4c92-bcfe-7e82a084ba0b", name: "When clicking ‘Execute workflow’", subtitle: "", type: "n8n-nodes-base.manualTrigger", typeVersion: 1, disabled: false, connections: [Object], issues: [Object], execution: [Object], runData: [Object], render: [Object] }, draggable: undefined, hidden: undefined } ] edges= []  ... > 
+  at <Canvas id="JWFleSZhitb3afgl" ref="canvas" nodes= [ { id: "124f27b4-4a59-4c92-bcfe-7e82a084ba0b", label: "When clicking ‘Execute workflow’", type: "canvas-node", position: { x: 23, y: 0 }, data: { id: "124f27b4-4a59-4c92-bcfe-7e82a084ba0b", name: "When clicking ‘Execute workflow’", subtitle: "", type: "n8n-nodes-base.manualTrigger", typeVersion: 1, disabled: false, connections: [Object], issues: [Object], execution: [Object], runData: [Object], render: [Object] }, draggable: undefined, hidden: undefined } ]  ... > 
+  at <WorkflowCanvas key=0 id="JWFleSZhitb3afgl" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:40:46[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:40:46[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <NodeSettingsHeader key=1 selected-tab="params" node-name="When clicking ‘Execute workflow’"  ... > 
+  at <NodeSettings eventBus= { on: [Function: on], once: [Function: once], off: [Function: off], emit: [Function: emit] } dragging=false pushRef=""  ... > 
+  at <ResizeWrapper width=0 min-width=260 supported-directions= [ "right" ]  ... > 
+  at <NodeDetailsView read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <AsyncComponentWrapper read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <WorkflowCanvas key=0 id="JWFleSZhitb3afgl" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:40:46[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <NodeExecuteButton key=2 data-test-id="node-execute-button" node-name="When clicking ‘Execute workflow’"  ... > 
+  at <NodeSettingsHeader key=1 selected-tab="params" node-name="When clicking ‘Execute workflow’"  ... > 
+  at <NodeSettings eventBus= { on: [Function: on], once: [Function: once], off: [Function: off], emit: [Function: emit] } dragging=false pushRef=""  ... > 
+  at <ResizeWrapper width=0 min-width=260 supported-directions= [ "right" ]  ... > 
+  at <NodeDetailsView read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <AsyncComponentWrapper read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <WorkflowCanvas key=0 id="JWFleSZhitb3afgl" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:40:46[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <RunData ref="runDataRef" class="_runData_g1f68_6 _output_1h3zx_62" node= { type: "n8n-nodes-base.manualTrigger", typeVersion: 1, position: [ 16, 0 ], id: "124f27b4-4a59-4c92-bcfe-7e82a084ba0b", name: "When clicking ‘Execute workflow’", disabled: false, parameters: { notice: "" }, placeholder: undefined }  ... > 
+  at <OutputPanel data-test-id="output-panel" can-link-runs=false run-index=0  ... > 
+  at <NodeDetailsView read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <AsyncComponentWrapper read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <WorkflowCanvas key=0 id="JWFleSZhitb3afgl" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:40:46[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:40:46[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <NodeExecuteButton hide-icon="" transparent="" variant="outline"  ... > 
+  at <NDVEmptyState key=1 title="No trigger output" has-compact-action="" > 
+  at <RunData ref="runDataRef" class="_runData_g1f68_6 _output_1h3zx_62" node= { type: "n8n-nodes-base.manualTrigger", typeVersion: 1, position: [ 16, 0 ], id: "124f27b4-4a59-4c92-bcfe-7e82a084ba0b", name: "When clicking ‘Execute workflow’", disabled: false, parameters: { notice: "" }, placeholder: undefined }  ... > 
+  at <OutputPanel data-test-id="output-panel" can-link-runs=false run-index=0  ... > 
+  at <NodeDetailsView read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <AsyncComponentWrapper read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <WorkflowCanvas key=0 id="JWFleSZhitb3afgl" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:40:46[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <NodeExecuteButton icon-only="" hide-label="" variant="outline"  ... > 
+  at <NDVEmptyState key=1 title="No trigger output" has-compact-action="" > 
+  at <RunData ref="runDataRef" class="_runData_g1f68_6 _output_1h3zx_62" node= { type: "n8n-nodes-base.manualTrigger", typeVersion: 1, position: [ 16, 0 ], id: "124f27b4-4a59-4c92-bcfe-7e82a084ba0b", name: "When clicking ‘Execute workflow’", disabled: false, parameters: { notice: "" }, placeholder: undefined }  ... > 
+  at <OutputPanel data-test-id="output-panel" can-link-runs=false run-index=0  ... > 
+  at <NodeDetailsView read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <AsyncComponentWrapper read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <WorkflowCanvas key=0 id="JWFleSZhitb3afgl" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:40:46[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:40:46[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:40:46[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:40:46[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:40:46[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:40:46[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:40:46[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:40:47[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:40:56[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <CanvasNodeTrigger key=2 name="Schedule Trigger" type="n8n-nodes-base.scheduleTrigger"  ... > 
+  at <CanvasNode id="fb9842bc-97cf-4fec-8b51-900e225ece1c" type="canvas-node" data= { id: "fb9842bc-97cf-4fec-8b51-900e225ece1c", name: "Schedule Trigger", subtitle: "", type: "n8n-nodes-base.scheduleTrigger", typeVersion: 1.4, disabled: false, connections: { inputs: {}, outputs: {} }, issues: { validation: [], visible: false }, execution: { status: undefined, waiting: undefined, waitingForNext: false, running: false }, runData: { outputMap: undefined, iterations: 0, visible: false }, render: { type: "default", options: { trigger: true, configuration: false, configurable: false, tooltip: undefined, dirtiness: undefined, icon: [Object], placeholder: false, deprecated: false, deprecatedReplacementName: undefined } } }  ... > 
+  at <RenderFnWithContext id="fb9842bc-97cf-4fec-8b51-900e225ece1c" type="canvas-node" data= { id: "fb9842bc-97cf-4fec-8b51-900e225ece1c", name: "Schedule Trigger", subtitle: "", type: "n8n-nodes-base.scheduleTrigger", typeVersion: 1.4, disabled: false, connections: { inputs: {}, outputs: {} }, issues: { validation: [], visible: false }, execution: { status: undefined, waiting: undefined, waitingForNext: false, running: false }, runData: { outputMap: undefined, iterations: 0, visible: false }, render: { type: "default", options: { trigger: true, configuration: false, configurable: false, tooltip: undefined, dirtiness: undefined, icon: [Object], placeholder: false, deprecated: false, deprecatedReplacementName: undefined } } }  ... > 
+  at <Node id="fb9842bc-97cf-4fec-8b51-900e225ece1c" key="fb9842bc-97cf-4fec-8b51-900e225ece1c" resize-observer= {} > 
+  at <Nodes> 
+  at <Transform> 
+  at <Pane is-selecting=true selection-key-pressed=true class="" > 
+  at <Viewport> 
+  at <VueFlow id="JWFleSZhitb3afgl" nodes= [ { id: "fb9842bc-97cf-4fec-8b51-900e225ece1c", label: "Schedule Trigger", type: "canvas-node", position: { x: 23, y: 0 }, data: { id: "fb9842bc-97cf-4fec-8b51-900e225ece1c", name: "Schedule Trigger", subtitle: "", type: "n8n-nodes-base.scheduleTrigger", typeVersion: 1.4, disabled: false, connections: [Object], issues: [Object], execution: [Object], runData: [Object], render: [Object] }, draggable: undefined, hidden: undefined } ] edges= []  ... > 
+  at <Canvas id="JWFleSZhitb3afgl" ref="canvas" nodes= [ { id: "fb9842bc-97cf-4fec-8b51-900e225ece1c", label: "Schedule Trigger", type: "canvas-node", position: { x: 23, y: 0 }, data: { id: "fb9842bc-97cf-4fec-8b51-900e225ece1c", name: "Schedule Trigger", subtitle: "", type: "n8n-nodes-base.scheduleTrigger", typeVersion: 1.4, disabled: false, connections: [Object], issues: [Object], execution: [Object], runData: [Object], render: [Object] }, draggable: undefined, hidden: undefined } ]  ... > 
+  at <WorkflowCanvas key=0 id="JWFleSZhitb3afgl" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <NodeSettingsHeader key=1 selected-tab="params" node-name="Schedule Trigger"  ... > 
+  at <NodeSettings eventBus= { on: [Function: on], once: [Function: once], off: [Function: off], emit: [Function: emit] } dragging=false pushRef=""  ... > 
+  at <ResizeWrapper width=0 min-width=260 supported-directions= [ "right" ]  ... > 
+  at <NodeDetailsView read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <AsyncComponentWrapper read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <WorkflowCanvas key=0 id="JWFleSZhitb3afgl" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <NodeExecuteButton key=2 data-test-id="node-execute-button" node-name="Schedule Trigger"  ... > 
+  at <NodeSettingsHeader key=1 selected-tab="params" node-name="Schedule Trigger"  ... > 
+  at <NodeSettings eventBus= { on: [Function: on], once: [Function: once], off: [Function: off], emit: [Function: emit] } dragging=false pushRef=""  ... > 
+  at <ResizeWrapper width=0 min-width=260 supported-directions= [ "right" ]  ... > 
+  at <NodeDetailsView read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <AsyncComponentWrapper read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <WorkflowCanvas key=0 id="JWFleSZhitb3afgl" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <RunData ref="runDataRef" class="_runData_g1f68_6 _output_1h3zx_62" node= { type: "n8n-nodes-base.scheduleTrigger", typeVersion: 1.4, position: [ 23, 0 ], id: "fb9842bc-97cf-4fec-8b51-900e225ece1c", name: "Schedule Trigger", disabled: false, parameters: { notice: "", rule: { interval: [Array] }, misfirePolicy: "skip", misfireGraceSeconds: 0 }, placeholder: undefined }  ... > 
+  at <OutputPanel data-test-id="output-panel" can-link-runs=false run-index=0  ... > 
+  at <NodeDetailsView read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <AsyncComponentWrapper read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <WorkflowCanvas key=0 id="JWFleSZhitb3afgl" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <NodeExecuteButton hide-icon="" transparent="" variant="outline"  ... > 
+  at <NDVEmptyState key=1 title="No trigger output" has-compact-action="" > 
+  at <RunData ref="runDataRef" class="_runData_g1f68_6 _output_1h3zx_62" node= { type: "n8n-nodes-base.scheduleTrigger", typeVersion: 1.4, position: [ 23, 0 ], id: "fb9842bc-97cf-4fec-8b51-900e225ece1c", name: "Schedule Trigger", disabled: false, parameters: { notice: "", rule: { interval: [Array] }, misfirePolicy: "skip", misfireGraceSeconds: 0 }, placeholder: undefined }  ... > 
+  at <OutputPanel data-test-id="output-panel" can-link-runs=false run-index=0  ... > 
+  at <NodeDetailsView read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <AsyncComponentWrapper read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <WorkflowCanvas key=0 id="JWFleSZhitb3afgl" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <NodeExecuteButton icon-only="" hide-label="" variant="outline"  ... > 
+  at <NDVEmptyState key=1 title="No trigger output" has-compact-action="" > 
+  at <RunData ref="runDataRef" class="_runData_g1f68_6 _output_1h3zx_62" node= { type: "n8n-nodes-base.scheduleTrigger", typeVersion: 1.4, position: [ 23, 0 ], id: "fb9842bc-97cf-4fec-8b51-900e225ece1c", name: "Schedule Trigger", disabled: false, parameters: { notice: "", rule: { interval: [Array] }, misfirePolicy: "skip", misfireGraceSeconds: 0 }, placeholder: undefined }  ... > 
+  at <OutputPanel data-test-id="output-panel" can-link-runs=false run-index=0  ... > 
+  at <NodeDetailsView read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <AsyncComponentWrapper read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <WorkflowCanvas key=0 id="JWFleSZhitb3afgl" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:41:03[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:41:08[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:41:14[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[intlify] Not found 'nodeCreator.subcategoryInfos.appRegularNodes' key in 'en' locale messages.
+[2m16:41:14[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[intlify] Not found 'nodeCreator.subcategoryInfos.dataTransformation' key in 'en' locale messages.
+[2m16:41:14[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[intlify] Not found 'nodeCreator.subcategoryInfos.flow' key in 'en' locale messages.
+[2m16:41:14[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[intlify] Not found 'nodeCreator.subcategoryInfos.helpers' key in 'en' locale messages.
+[2m16:41:14[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[intlify] Not found 'nodeCreator.subcategoryInfos.humanInTheLoop' key in 'en' locale messages.
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <InputPanel key=1 can-link-runs=false run-index=0  ... > 
+  at <NodeDetailsView read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <AsyncComponentWrapper read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <WorkflowCanvas key=0 id="JWFleSZhitb3afgl" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <RunData class="_runData_8bnfg_1 _input_1h3zx_61" node= { type: "n8n-nodes-base.scheduleTrigger", typeVersion: 1.4, position: [ 16, -64 ], id: "fb9842bc-97cf-4fec-8b51-900e225ece1c", name: "Schedule Trigger", disabled: false, parameters: { notice: "", rule: { interval: [Array] }, misfirePolicy: "skip", misfireGraceSeconds: 0 }, placeholder: undefined } nodes= [ { name: "Schedule Trigger", indicies: [ 0 ], depth: 1 } ]  ... > 
+  at <InputPanel key=1 can-link-runs=false run-index=0  ... > 
+  at <NodeDetailsView read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <AsyncComponentWrapper read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <WorkflowCanvas key=0 id="JWFleSZhitb3afgl" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <NodeExecuteButton hide-icon="" transparent="" variant="outline"  ... > 
+  at <I18nT tag="span" keypath="ndv.input.noOutputData.description" scope="global" > 
+  at <NDVEmptyState key=1 title="No input data" icon="arrow-right-to-line"  ... > 
+  at <RunData class="_runData_8bnfg_1 _input_1h3zx_61" node= { type: "n8n-nodes-base.scheduleTrigger", typeVersion: 1.4, position: [ 16, -64 ], id: "fb9842bc-97cf-4fec-8b51-900e225ece1c", name: "Schedule Trigger", disabled: false, parameters: { notice: "", rule: { interval: [Array] }, misfirePolicy: "skip", misfireGraceSeconds: 0 }, placeholder: undefined } nodes= [ { name: "Schedule Trigger", indicies: [ 0 ], depth: 1 } ]  ... > 
+  at <InputPanel key=1 can-link-runs=false run-index=0  ... > 
+  at <NodeDetailsView read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <AsyncComponentWrapper read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <WorkflowCanvas key=0 id="JWFleSZhitb3afgl" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <NodeExecuteButton icon-only="" hide-label="" variant="outline"  ... > 
+  at <NDVEmptyState key=1 title="No input data" icon="arrow-right-to-line"  ... > 
+  at <RunData class="_runData_8bnfg_1 _input_1h3zx_61" node= { type: "n8n-nodes-base.scheduleTrigger", typeVersion: 1.4, position: [ 16, -64 ], id: "fb9842bc-97cf-4fec-8b51-900e225ece1c", name: "Schedule Trigger", disabled: false, parameters: { notice: "", rule: { interval: [Array] }, misfirePolicy: "skip", misfireGraceSeconds: 0 }, placeholder: undefined } nodes= [ { name: "Schedule Trigger", indicies: [ 0 ], depth: 1 } ]  ... > 
+  at <InputPanel key=1 can-link-runs=false run-index=0  ... > 
+  at <NodeDetailsView read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <AsyncComponentWrapper read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <WorkflowCanvas key=0 id="JWFleSZhitb3afgl" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <NodeSettingsHeader key=1 selected-tab="params" node-name="Create spreadsheet"  ... > 
+  at <NodeSettings eventBus= { on: [Function: on], once: [Function: once], off: [Function: off], emit: [Function: emit] } dragging=false pushRef=""  ... > 
+  at <ResizeWrapper width=0 min-width=260 supported-directions= [ "left", "right" ]  ... > 
+  at <NodeDetailsView read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <AsyncComponentWrapper read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <WorkflowCanvas key=0 id="JWFleSZhitb3afgl" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <NodeExecuteButton key=2 data-test-id="node-execute-button" node-name="Create spreadsheet"  ... > 
+  at <NodeSettingsHeader key=1 selected-tab="params" node-name="Create spreadsheet"  ... > 
+  at <NodeSettings eventBus= { on: [Function: on], once: [Function: once], off: [Function: off], emit: [Function: emit] } dragging=false pushRef=""  ... > 
+  at <ResizeWrapper width=0 min-width=260 supported-directions= [ "left", "right" ]  ... > 
+  at <NodeDetailsView read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <AsyncComponentWrapper read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <WorkflowCanvas key=0 id="JWFleSZhitb3afgl" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <RunData ref="runDataRef" class="_runData_g1f68_6 _output_1h3zx_62" node= { type: "n8n-nodes-base.googleSheets", parameters: { authentication: "oAuth2", resource: "spreadsheet", operation: "create", title: "", sheetsUi: {}, options: {} }, typeVersion: 4.7, position: [ -23, -64 ], id: "d240808d-76fe-462c-9ef4-01e4783b71a4", name: "Create spreadsheet", disabled: false, placeholder: undefined, issues: { credentials: { googleSheetsOAuth2Api: [Array] } } }  ... > 
+  at <OutputPanel data-test-id="output-panel" can-link-runs=false run-index=0  ... > 
+  at <NodeDetailsView read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <AsyncComponentWrapper read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <WorkflowCanvas key=0 id="JWFleSZhitb3afgl" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mCondition was not resolved as boolean in 'Create spreadsheet' node for hint:  Note on using an expression for Sheet: It will be evaluated only once, so all items will use the <em>same</em> sheet. It will be calculated by evaluating the expression for the <strong>first input item</strong>.
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mCondition was not resolved as boolean in 'Create spreadsheet' node for hint:  Note on using an expression for Document: It will be evaluated only once, so all items will use the <em>same</em> document. It will be calculated by evaluating the expression for the <strong>first input item</strong>.
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <NodeExecuteButton hide-icon="" transparent="" variant="outline"  ... > 
+  at <NDVEmptyState key=1 title="No output data" has-compact-action="" > 
+  at <RunData ref="runDataRef" class="_runData_g1f68_6 _output_1h3zx_62" node= { type: "n8n-nodes-base.googleSheets", parameters: { authentication: "oAuth2", resource: "spreadsheet", operation: "create", title: "", sheetsUi: {}, options: {} }, typeVersion: 4.7, position: [ -23, -64 ], id: "d240808d-76fe-462c-9ef4-01e4783b71a4", name: "Create spreadsheet", disabled: false, placeholder: undefined, issues: { credentials: { googleSheetsOAuth2Api: [Array] } } }  ... > 
+  at <OutputPanel data-test-id="output-panel" can-link-runs=false run-index=0  ... > 
+  at <NodeDetailsView read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <AsyncComponentWrapper read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <WorkflowCanvas key=0 id="JWFleSZhitb3afgl" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <NodeExecuteButton icon-only="" hide-label="" variant="outline"  ... > 
+  at <NDVEmptyState key=1 title="No output data" has-compact-action="" > 
+  at <RunData ref="runDataRef" class="_runData_g1f68_6 _output_1h3zx_62" node= { type: "n8n-nodes-base.googleSheets", parameters: { authentication: "oAuth2", resource: "spreadsheet", operation: "create", title: "", sheetsUi: {}, options: {} }, typeVersion: 4.7, position: [ -23, -64 ], id: "d240808d-76fe-462c-9ef4-01e4783b71a4", name: "Create spreadsheet", disabled: false, placeholder: undefined, issues: { credentials: { googleSheetsOAuth2Api: [Array] } } }  ... > 
+  at <OutputPanel data-test-id="output-panel" can-link-runs=false run-index=0  ... > 
+  at <NodeDetailsView read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <AsyncComponentWrapper read-only=false is-production-execution-preview=false onRenameNode=fn<onRenameNode>  ... > 
+  at <WorkflowCanvas key=0 id="JWFleSZhitb3afgl" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mCondition was not resolved as boolean in 'Create spreadsheet' node for hint:  Note on using an expression for Sheet: It will be evaluated only once, so all items will use the <em>same</em> sheet. It will be calculated by evaluating the expression for the <strong>first input item</strong>.
+[2m16:42:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mCondition was not resolved as boolean in 'Create spreadsheet' node for hint:  Note on using an expression for Document: It will be evaluated only once, so all items will use the <em>same</em> document. It will be calculated by evaluating the expression for the <strong>first input item</strong>.
+[2m16:42:19[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: inject() can only be used inside setup() or functional components. 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< null > > 
+  at <RouterView> 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <AuthLayout key=2 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=2 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:42:19[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: inject() can only be used inside setup() or functional components. 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< null > > 
+  at <RouterView> 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <AuthLayout key=2 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=2 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:42:28[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mCondition was not resolved as boolean in 'Create spreadsheet' node for hint:  Note on using an expression for Sheet: It will be evaluated only once, so all items will use the <em>same</em> sheet. It will be calculated by evaluating the expression for the <strong>first input item</strong>.
+[2m16:42:28[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mCondition was not resolved as boolean in 'Create spreadsheet' node for hint:  Note on using an expression for Document: It will be evaluated only once, so all items will use the <em>same</em> document. It will be calculated by evaluating the expression for the <strong>first input item</strong>.
+[2m16:42:28[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: inject() can only be used inside setup() or functional components. 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< null > > 
+  at <RouterView> 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <AuthLayout key=2 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=2 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:42:28[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: inject() can only be used inside setup() or functional components. 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< null > > 
+  at <RouterView> 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <AuthLayout key=2 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=2 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:42:29[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mCondition was not resolved as boolean in 'Create spreadsheet' node for hint:  Note on using an expression for Sheet: It will be evaluated only once, so all items will use the <em>same</em> sheet. It will be calculated by evaluating the expression for the <strong>first input item</strong>.
+[2m16:42:29[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mCondition was not resolved as boolean in 'Create spreadsheet' node for hint:  Note on using an expression for Document: It will be evaluated only once, so all items will use the <em>same</em> document. It will be calculated by evaluating the expression for the <strong>first input item</strong>.
+[2m16:42:29[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: inject() can only be used inside setup() or functional components. 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< null > > 
+  at <RouterView> 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <AuthLayout key=2 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=2 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:42:29[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: inject() can only be used inside setup() or functional components. 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< null > > 
+  at <RouterView> 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <AuthLayout key=2 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=2 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:42:31[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mCondition was not resolved as boolean in 'Create spreadsheet' node for hint:  Note on using an expression for Sheet: It will be evaluated only once, so all items will use the <em>same</em> sheet. It will be calculated by evaluating the expression for the <strong>first input item</strong>.
+[2m16:42:31[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mCondition was not resolved as boolean in 'Create spreadsheet' node for hint:  Note on using an expression for Document: It will be evaluated only once, so all items will use the <em>same</em> document. It will be calculated by evaluating the expression for the <strong>first input item</strong>.
+[2m16:42:31[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: inject() can only be used inside setup() or functional components. 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< null > > 
+  at <RouterView> 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <AuthLayout key=2 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=2 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:42:31[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: inject() can only be used inside setup() or functional components. 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< null > > 
+  at <RouterView> 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <AuthLayout key=2 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=2 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:42:31[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:42:31[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:42:31[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:42:31[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:42:34[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:42:54[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mWarning: Missing `Description` or `aria-describedby="undefined"` for DialogContent.
+[2m16:43:10[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:43:11[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:43:11[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:43:11[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:43:11[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:43:11[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:43:11[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:43:17[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:43:17[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:43:17[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <LogsPanel> 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:43:17[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:43:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< undefined > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:43:18[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <CanvasNodeTrigger key=2 name="When clicking ‘Execute workflow’" type="n8n-nodes-base.manualTrigger"  ... > 
+  at <CanvasNode id="95e7127b-ec64-4138-8105-85b1a8b23c79" type="canvas-node" data= { id: "95e7127b-ec64-4138-8105-85b1a8b23c79", name: "When clicking ‘Execute workflow’", subtitle: "", type: "n8n-nodes-base.manualTrigger", typeVersion: 1, disabled: undefined, connections: { inputs: {}, outputs: { main: [Array] } }, issues: { validation: [], visible: false }, execution: { status: undefined, waiting: undefined, waitingForNext: false, running: false }, runData: { outputMap: undefined, iterations: 0, visible: false }, render: { type: "default", options: { trigger: true, configuration: false, configurable: false, tooltip: undefined, dirtiness: undefined, icon: [Object], placeholder: false, deprecated: false, deprecatedReplacementName: undefined } } }  ... > 
+  at <RenderFnWithContext id="95e7127b-ec64-4138-8105-85b1a8b23c79" type="canvas-node" data= { id: "95e7127b-ec64-4138-8105-85b1a8b23c79", name: "When clicking ‘Execute workflow’", subtitle: "", type: "n8n-nodes-base.manualTrigger", typeVersion: 1, disabled: undefined, connections: { inputs: {}, outputs: { main: [Array] } }, issues: { validation: [], visible: false }, execution: { status: undefined, waiting: undefined, waitingForNext: false, running: false }, runData: { outputMap: undefined, iterations: 0, visible: false }, render: { type: "default", options: { trigger: true, configuration: false, configurable: false, tooltip: undefined, dirtiness: undefined, icon: [Object], placeholder: false, deprecated: false, deprecatedReplacementName: undefined } } }  ... > 
+  at <Node id="95e7127b-ec64-4138-8105-85b1a8b23c79" key="95e7127b-ec64-4138-8105-85b1a8b23c79" resize-observer= {} > 
+  at <Nodes> 
+  at <Transform> 
+  at <Pane is-selecting=true selection-key-pressed=true class="" > 
+  at <Viewport> 
+  at <VueFlow id="5SitmDOGwlnoDoUI" nodes= [ { id: "95e7127b-ec64-4138-8105-85b1a8b23c79", label: "When clicking ‘Execute workflow’", type: "canvas-node", position: { x: -144, y: 0 }, data: { id: "95e7127b-ec64-4138-8105-85b1a8b23c79", name: "When clicking ‘Execute workflow’", subtitle: "", type: "n8n-nodes-base.manualTrigger", typeVersion: 1, disabled: undefined, connections: [Object], issues: [Object], execution: [Object], runData: [Object], render: [Object] }, draggable: undefined, hidden: undefined }, { id: "4c6fb823-a19a-4563-bac1-5f97741c79ee", label: "Code in JavaScript", type: "canvas-node", position: { x: -144, y: 80 }, data: { id: "4c6fb823-a19a-4563-bac1-5f97741c79ee", name: "Code in JavaScript", subtitle: "", type: "n8n-nodes-base.code", typeVersion: 2, disabled: undefined, connections: [Object], issues: [Object], execution: [Object], runData: [Object], render: [Object] }, draggable: undefined, hidden: undefined } ] edges= [ { id: "[95e7127b-ec64-4138-8105-85b1a8b23c79/outputs/main/0][4c6fb823-a19a-4563-bac1-5f97741c79ee/inputs/main/0]", source: "95e7127b-ec64-4138-8105-85b1a8b23c79", target: "4c6fb823-a19a-4563-bac1-5f97741c79ee", sourceHandle: "outputs/main/0", targetHandle: "inputs/main/0", data: { source: [Object], target: [Object], status: undefined }, type: "canvas-edge", label: "", markerEnd: "arrowclosed" } ]  ... > 
+  at <Canvas id="5SitmDOGwlnoDoUI" ref="canvas" nodes= [ { id: "95e7127b-ec64-4138-8105-85b1a8b23c79", label: "When clicking ‘Execute workflow’", type: "canvas-node", position: { x: -144, y: 0 }, data: { id: "95e7127b-ec64-4138-8105-85b1a8b23c79", name: "When clicking ‘Execute workflow’", subtitle: "", type: "n8n-nodes-base.manualTrigger", typeVersion: 1, disabled: undefined, connections: [Object], issues: [Object], execution: [Object], runData: [Object], render: [Object] }, draggable: undefined, hidden: undefined }, { id: "4c6fb823-a19a-4563-bac1-5f97741c79ee", label: "Code in JavaScript", type: "canvas-node", position: { x: -144, y: 80 }, data: { id: "4c6fb823-a19a-4563-bac1-5f97741c79ee", name: "Code in JavaScript", subtitle: "", type: "n8n-nodes-base.code", typeVersion: 2, disabled: undefined, connections: [Object], issues: [Object], execution: [Object], runData: [Object], render: [Object] }, draggable: undefined, hidden: undefined } ]  ... > 
+  at <WorkflowCanvas key=0 id="5SitmDOGwlnoDoUI" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:43:26[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mWarning: Missing `Description` or `aria-describedby="undefined"` for DialogContent.
+[2m16:43:59[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:44:29[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:44:30[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:44:30[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <LogsPanel> 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:44:31[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:44:32[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< undefined > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:44:32[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <CanvasNodeTrigger key=2 name="When clicking ‘Execute workflow’" type="n8n-nodes-base.manualTrigger"  ... > 
+  at <CanvasNode id="95e7127b-ec64-4138-8105-85b1a8b23c79" type="canvas-node" data= { id: "95e7127b-ec64-4138-8105-85b1a8b23c79", name: "When clicking ‘Execute workflow’", subtitle: "", type: "n8n-nodes-base.manualTrigger", typeVersion: 1, disabled: undefined, connections: { inputs: {}, outputs: { main: [Array] } }, issues: { validation: [], visible: false }, execution: { status: undefined, waiting: undefined, waitingForNext: false, running: false }, runData: { outputMap: undefined, iterations: 0, visible: false }, render: { type: "default", options: { trigger: true, configuration: false, configurable: false, tooltip: undefined, dirtiness: undefined, icon: [Object], placeholder: false, deprecated: false, deprecatedReplacementName: undefined } } }  ... > 
+  at <RenderFnWithContext id="95e7127b-ec64-4138-8105-85b1a8b23c79" type="canvas-node" data= { id: "95e7127b-ec64-4138-8105-85b1a8b23c79", name: "When clicking ‘Execute workflow’", subtitle: "", type: "n8n-nodes-base.manualTrigger", typeVersion: 1, disabled: undefined, connections: { inputs: {}, outputs: { main: [Array] } }, issues: { validation: [], visible: false }, execution: { status: undefined, waiting: undefined, waitingForNext: false, running: false }, runData: { outputMap: undefined, iterations: 0, visible: false }, render: { type: "default", options: { trigger: true, configuration: false, configurable: false, tooltip: undefined, dirtiness: undefined, icon: [Object], placeholder: false, deprecated: false, deprecatedReplacementName: undefined } } }  ... > 
+  at <Node id="95e7127b-ec64-4138-8105-85b1a8b23c79" key="95e7127b-ec64-4138-8105-85b1a8b23c79" resize-observer= {} > 
+  at <Nodes> 
+  at <Transform> 
+  at <Pane is-selecting=true selection-key-pressed=true class="" > 
+  at <Viewport> 
+  at <VueFlow id="5SitmDOGwlnoDoUI" nodes= [ { id: "95e7127b-ec64-4138-8105-85b1a8b23c79", label: "When clicking ‘Execute workflow’", type: "canvas-node", position: { x: -144, y: 0 }, data: { id: "95e7127b-ec64-4138-8105-85b1a8b23c79", name: "When clicking ‘Execute workflow’", subtitle: "", type: "n8n-nodes-base.manualTrigger", typeVersion: 1, disabled: undefined, connections: [Object], issues: [Object], execution: [Object], runData: [Object], render: [Object] }, draggable: undefined, hidden: undefined }, { id: "4c6fb823-a19a-4563-bac1-5f97741c79ee", label: "Code in JavaScript", type: "canvas-node", position: { x: -144, y: 80 }, data: { id: "4c6fb823-a19a-4563-bac1-5f97741c79ee", name: "Code in JavaScript", subtitle: "", type: "n8n-nodes-base.code", typeVersion: 2, disabled: undefined, connections: [Object], issues: [Object], execution: [Object], runData: [Object], render: [Object] }, draggable: undefined, hidden: undefined } ] edges= [ { id: "[95e7127b-ec64-4138-8105-85b1a8b23c79/outputs/main/0][4c6fb823-a19a-4563-bac1-5f97741c79ee/inputs/main/0]", source: "95e7127b-ec64-4138-8105-85b1a8b23c79", target: "4c6fb823-a19a-4563-bac1-5f97741c79ee", sourceHandle: "outputs/main/0", targetHandle: "inputs/main/0", data: { source: [Object], target: [Object], status: undefined }, type: "canvas-edge", label: "", markerEnd: "arrowclosed" } ]  ... > 
+  at <Canvas id="5SitmDOGwlnoDoUI" ref="canvas" nodes= [ { id: "95e7127b-ec64-4138-8105-85b1a8b23c79", label: "When clicking ‘Execute workflow’", type: "canvas-node", position: { x: -144, y: 0 }, data: { id: "95e7127b-ec64-4138-8105-85b1a8b23c79", name: "When clicking ‘Execute workflow’", subtitle: "", type: "n8n-nodes-base.manualTrigger", typeVersion: 1, disabled: undefined, connections: [Object], issues: [Object], execution: [Object], runData: [Object], render: [Object] }, draggable: undefined, hidden: undefined }, { id: "4c6fb823-a19a-4563-bac1-5f97741c79ee", label: "Code in JavaScript", type: "canvas-node", position: { x: -144, y: 80 }, data: { id: "4c6fb823-a19a-4563-bac1-5f97741c79ee", name: "Code in JavaScript", subtitle: "", type: "n8n-nodes-base.code", typeVersion: 2, disabled: undefined, connections: [Object], issues: [Object], execution: [Object], runData: [Object], render: [Object] }, draggable: undefined, hidden: undefined } ]  ... > 
+  at <WorkflowCanvas key=0 id="5SitmDOGwlnoDoUI" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:44:37[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:44:37[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:44:38[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:45:02[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:45:02[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:45:02[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:45:02[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:45:02[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m16:45:02[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:45:06[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m16:45:06[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:45:06[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <LogsPanel> 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:45:06[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m16:45:07[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< undefined > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m16:45:07[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <CanvasNodeTrigger key=2 name="Schedule Trigger" type="n8n-nodes-base.scheduleTrigger"  ... > 
+  at <CanvasNode id="fb9842bc-97cf-4fec-8b51-900e225ece1c" type="canvas-node" data= { id: "fb9842bc-97cf-4fec-8b51-900e225ece1c", name: "Schedule Trigger", subtitle: "", type: "n8n-nodes-base.scheduleTrigger", typeVersion: 1.4, disabled: undefined, connections: { inputs: {}, outputs: { main: [Array] } }, issues: { validation: [], visible: false }, execution: { status: undefined, waiting: undefined, waitingForNext: false, running: false }, runData: { outputMap: undefined, iterations: 0, visible: false }, render: { type: "default", options: { trigger: true, configuration: false, configurable: false, tooltip: undefined, dirtiness: undefined, icon: [Object], placeholder: false, deprecated: false, deprecatedReplacementName: undefined } } }  ... > 
+  at <RenderFnWithContext id="fb9842bc-97cf-4fec-8b51-900e225ece1c" type="canvas-node" data= { id: "fb9842bc-97cf-4fec-8b51-900e225ece1c", name: "Schedule Trigger", subtitle: "", type: "n8n-nodes-base.scheduleTrigger", typeVersion: 1.4, disabled: undefined, connections: { inputs: {}, outputs: { main: [Array] } }, issues: { validation: [], visible: false }, execution: { status: undefined, waiting: undefined, waitingForNext: false, running: false }, runData: { outputMap: undefined, iterations: 0, visible: false }, render: { type: "default", options: { trigger: true, configuration: false, configurable: false, tooltip: undefined, dirtiness: undefined, icon: [Object], placeholder: false, deprecated: false, deprecatedReplacementName: undefined } } }  ... > 
+  at <Node id="fb9842bc-97cf-4fec-8b51-900e225ece1c" key="fb9842bc-97cf-4fec-8b51-900e225ece1c" resize-observer= {} > 
+  at <Nodes> 
+  at <Transform> 
+  at <Pane is-selecting=true selection-key-pressed=true class="" > 
+  at <Viewport> 
+  at <VueFlow id="JWFleSZhitb3afgl" nodes= [ { id: "fb9842bc-97cf-4fec-8b51-900e225ece1c", label: "Schedule Trigger", type: "canvas-node", position: { x: -16, y: -64 }, data: { id: "fb9842bc-97cf-4fec-8b51-900e225ece1c", name: "Schedule Trigger", subtitle: "", type: "n8n-nodes-base.scheduleTrigger", typeVersion: 1.4, disabled: undefined, connections: [Object], issues: [Object], execution: [Object], runData: [Object], render: [Object] }, draggable: undefined, hidden: undefined }, { id: "d240808d-76fe-462c-9ef4-01e4783b71a4", label: "Create spreadsheet", type: "canvas-node", position: { x: -16, y: 16 }, data: { id: "d240808d-76fe-462c-9ef4-01e4783b71a4", name: "Create spreadsheet", subtitle: "create: spreadsheet", type: "n8n-nodes-base.googleSheets", typeVersion: 4.7, disabled: undefined, connections: [Object], issues: [Object], execution: [Object], runData: [Object], render: [Object] }, draggable: undefined, hidden: undefined } ] edges= [ { id: "[fb9842bc-97cf-4fec-8b51-900e225ece1c/outputs/main/0][d240808d-76fe-462c-9ef4-01e4783b71a4/inputs/main/0]", source: "fb9842bc-97cf-4fec-8b51-900e225ece1c", target: "d240808d-76fe-462c-9ef4-01e4783b71a4", sourceHandle: "outputs/main/0", targetHandle: "inputs/main/0", data: { source: [Object], target: [Object], status: undefined }, type: "canvas-edge", label: "", markerEnd: "arrowclosed" } ]  ... > 
+  at <Canvas id="JWFleSZhitb3afgl" ref="canvas" nodes= [ { id: "fb9842bc-97cf-4fec-8b51-900e225ece1c", label: "Schedule Trigger", type: "canvas-node", position: { x: -16, y: -64 }, data: { id: "fb9842bc-97cf-4fec-8b51-900e225ece1c", name: "Schedule Trigger", subtitle: "", type: "n8n-nodes-base.scheduleTrigger", typeVersion: 1.4, disabled: undefined, connections: [Object], issues: [Object], execution: [Object], runData: [Object], render: [Object] }, draggable: undefined, hidden: undefined }, { id: "d240808d-76fe-462c-9ef4-01e4783b71a4", label: "Create spreadsheet", type: "canvas-node", position: { x: -16, y: 16 }, data: { id: "d240808d-76fe-462c-9ef4-01e4783b71a4", name: "Create spreadsheet", subtitle: "create: spreadsheet", type: "n8n-nodes-base.googleSheets", typeVersion: 4.7, disabled: undefined, connections: [Object], issues: [Object], execution: [Object], runData: [Object], render: [Object] }, draggable: undefined, hidden: undefined } ]  ... > 
+  at <WorkflowCanvas key=0 id="JWFleSZhitb3afgl" ref="canvas"  ... > 
+  at <NodeView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView key=1 > 
+  at <BaseLayout onMounted=fn<onMounted> > 
+  at <WorkflowLayout key=1 onMounted=fn<onMounted> > 
+  at <AsyncComponentWrapper key=1 onMounted=fn<onMounted> > 
+  at <AppLayout onMounted=fn<setLayoutRef> > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use color.mix instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+63 │ ┌           mix(
+64 │ │             $mix-color,
+65 │ │             map.get($colors, $type, 'base'),
+66 │ │             math.percentage(math.div($number, 10))
+67 │ │           ),
+   │ └───────────^
+   ╵
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\common\var.scss 63:11   set-color-mix-level()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\common\var.scss 87:5    @use
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\mixins.scss 2:1  @use
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\slider.scss 3:1         @use
+    Z:\packages\frontend\@n8n\design-system\src\css\slider.scss 7:1                                                                               @use
+    Z:\packages\frontend\@n8n\design-system\src\css\index.scss 14:1                                                                               root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use meta.inspect instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+5 │   $selector: inspect($selector);
+  │              ^^^^^^^^^^^^^^^^^^
+  ╵
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\function.scss 5:14   selectorToString()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\function.scss 11:14  containsModifier()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\function.scss 41:11  hitAllSpecialNestRule()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\mixins.scss 77:7     e()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\slider.scss 28:3            @content
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\mixins.scss 60:5     b()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\slider.scss 22:1            @use
+    Z:\packages\frontend\@n8n\design-system\src\css\slider.scss 7:1                                                                                   @use
+    Z:\packages\frontend\@n8n\design-system\src\css\index.scss 14:1                                                                                   root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.slice instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+6 │   $selector: str-slice($selector, 2, -2);
+  │              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\function.scss 6:14   selectorToString()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\function.scss 11:14  containsModifier()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\function.scss 41:11  hitAllSpecialNestRule()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\mixins.scss 77:7     e()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\slider.scss 28:3            @content
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\mixins.scss 60:5     b()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\slider.scss 22:1            @use
+    Z:\packages\frontend\@n8n\design-system\src\css\slider.scss 7:1                                                                                   @use
+    Z:\packages\frontend\@n8n\design-system\src\css\index.scss 14:1                                                                                   root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.index instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+13 │   @if str-index($selector, config.$modifier-separator) {
+   │       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\function.scss 13:7   containsModifier()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\function.scss 41:11  hitAllSpecialNestRule()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\mixins.scss 77:7     e()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\slider.scss 28:3            @content
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\mixins.scss 60:5     b()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\slider.scss 22:1            @use
+    Z:\packages\frontend\@n8n\design-system\src\css\slider.scss 7:1                                                                                   @use
+    Z:\packages\frontend\@n8n\design-system\src\css\index.scss 14:1                                                                                   root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.index instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+23 │   @if str-index($selector, '.' + config.$state-prefix) {
+   │       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\function.scss 23:7   containWhenFlag()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\function.scss 41:42  hitAllSpecialNestRule()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\mixins.scss 77:7     e()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\slider.scss 28:3            @content
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\mixins\mixins.scss 60:5     b()
+    ..\..\..\..\..\element-plus@2.4.3_patch_ha_f2e333df73e02df285fe0bca1f85e315\node_modules\element-plus\theme-chalk\src\slider.scss 22:1            @use
+    Z:\packages\frontend\@n8n\design-system\src\css\slider.scss 7:1                                                                                   @use
+    Z:\packages\frontend\@n8n\design-system\src\css\index.scss 14:1                                                                                   root stylesheet
+
+WARNING: 1 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+
+[2m17:12:36[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mModule "timers" has been externalized for browser compatibility. Cannot access "timers.setImmediate" in client code. See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+[2m17:12:38[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <AppCommandBar> 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m17:12:40[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: inject() can only be used inside setup() or functional components.
+[2m17:12:45[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m17:12:46[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <AskAssistantBuild key=0 ref="askAssistantBuildRef" onClose=fn<onClose> > 
+  at <ResizeWrapper supported-directions= [ "left" ] width=400 min-width=380  ... > 
+  at <BaseTransition onAfterEnter=fn<onSlideEnterComplete> appear=false persisted=true  ... > 
+  at <Transition enter-active-class="_slideEnterActive_fcz0b_6" enter-from-class="_slideFrom_fcz0b_14" leave-active-class="_slideLeaveActive_fcz0b_10"  ... > 
+  at <AssistantsHub> 
+  at <AppChatPanel key=0 layout-ref= {} > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+The request id "Z:\packages\frontend\@n8n\design-system\assets\fonts\Geist-Variable.woff2" is outside of Vite serving allow list.
+[2m17:12:47[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m17:13:27[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mModule "timers" has been externalized for browser compatibility. Cannot access "timers.setImmediate" in client code. See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+[2m17:13:27[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <AppCommandBar> 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m17:13:28[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: inject() can only be used inside setup() or functional components.
+[2m17:13:30[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m17:13:30[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <AskAssistantBuild key=0 ref="askAssistantBuildRef" onClose=fn<onClose> > 
+  at <ResizeWrapper supported-directions= [ "left" ] width=400 min-width=380  ... > 
+  at <BaseTransition onAfterEnter=fn<onSlideEnterComplete> appear=false persisted=true  ... > 
+  at <Transition enter-active-class="_slideEnterActive_fcz0b_6" enter-from-class="_slideFrom_fcz0b_14" leave-active-class="_slideLeaveActive_fcz0b_10"  ... > 
+  at <AssistantsHub> 
+  at <AppChatPanel key=0 layout-ref= {} > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+The request id "Z:\packages\frontend\@n8n\design-system\assets\fonts\Geist-Variable.woff2" is outside of Vite serving allow list.
+[2m17:13:31[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m17:13:31[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m17:13:31[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m17:13:31[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m17:13:31[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m17:13:31[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m17:13:31[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m17:13:31[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m17:21:21[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mModule "timers" has been externalized for browser compatibility. Cannot access "timers.setImmediate" in client code. See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+[2m17:21:22[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <AppCommandBar> 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+[2m17:21:23[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: inject() can only be used inside setup() or functional components.
+[2m17:21:25[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m17:21:25[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: injection "Chat" not found. 
+  at <AskAssistantBuild key=0 ref="askAssistantBuildRef" onClose=fn<onClose> > 
+  at <ResizeWrapper supported-directions= [ "left" ] width=400 min-width=380  ... > 
+  at <BaseTransition onAfterEnter=fn<onSlideEnterComplete> appear=false persisted=true  ... > 
+  at <Transition enter-active-class="_slideEnterActive_fcz0b_6" enter-from-class="_slideFrom_fcz0b_14" leave-active-class="_slideLeaveActive_fcz0b_10"  ... > 
+  at <AssistantsHub> 
+  at <AppChatPanel key=0 layout-ref= {} > 
+  at <BaseLayout key=1 id="n8n-app" class="_app_n3da7_1" > 
+  at <App>
+The request id "Z:\packages\frontend\@n8n\design-system\assets\fonts\Geist-Variable.woff2" is outside of Vite serving allow list.
+[2m17:21:25[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue Router warn]: Discarded invalid param(s) "projectId" when navigating. See https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md#414-2022-08-22 for more details.
+[2m17:21:25[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m17:21:25[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m17:21:25[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m17:21:25[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.
+[2m17:21:26[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m17:21:26[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[N8nButton] Icon-only buttons should have an accessible label. Add aria-label or title attribute.
+[2m17:21:26[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn] toRefs() expects a reactive object but received a plain one.

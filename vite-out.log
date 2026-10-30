@@ -1,0 +1,9 @@
+
+  [32m[1mVITE[22m v8.3.4[39m  [2mready in [0m[1m62468[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m8080[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.0.248:[1m8080[22m/[39m  [2mEthernet 2[22m
+[36m[vite-plugin-static-copy][39m [32mCollected 4 items.[39m
+[2m17:08:11[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/Z:/packages/frontend/@n8n/design-system/src/css/index.scss[22m
+[2m17:08:18[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/Z:/packages/frontend/@n8n/design-system/src/css/index.scss[22m
+[2m17:08:24[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/Z:/packages/frontend/@n8n/design-system/src/css/index.scss[22m

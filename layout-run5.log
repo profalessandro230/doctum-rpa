@@ -1,0 +1,207 @@
+﻿node.exe : [33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned 
+to become the default in a future major version of Vite:
+No C:\Users\Usuario-01\AppData\Local\Temp\opencode\pnpm-bin\pnpm.ps1:24 caractere:5
++     & "node$exe"  "$basedir/../../../../../../../Program Files/nodejs ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([33m(!) Your V...ersion of Vite::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  - `__dirname` (vite.config.mts:28:29). Use `import.meta.dirname` instead
+  - import "../@n8n/design-system/src/icons/lucide/vite" without a file extension (vite.config.mts:12:35). Add the 
+file extension
+  - import "./vite/i18n-locales-hmr-helpers" without a file extension (vite.config.mts:15:48). Add the file extension
+  - import "../../@n8n/constants/src/csp" without a file extension (vite.config.mts:20:40). Add the file extension
+  - ESM syntax in a file loaded as CommonJS (../../@n8n/constants/src/csp.ts:6:1). Use a `.mjs` extension or set 
+`"type": "module"` in the closest package.json
+  - import "./bucket" without a file extension (../@n8n/design-system/src/icons/lucide/vite.ts:5:46). Add the file 
+extension
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.[39m
+
+ RUN  v5.0.1 C:/Users/Usuario-01/Documents/Projeto Padr├úo/n8n-master/packages/frontend/editor-ui
+
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts (47 tests | 5 failed) 258ms
+   ÔØ» useCanvasLayout (47)
+     Ô£ô should layout a basic workflow 25ms
+     Ô£ô should layout a basic workflow with selected nodes 5ms
+     Ô£ô should ignore an empty explicit node filter 4ms
+     Ô£ô should layout a workflow with AI nodes 9ms
+     Ô£ô should layout a workflow with sticky notes 4ms
+     Ô£ô should not reorder nodes vertically as it affects execution order 3ms
+     Ô£ô places the true IF branch left of the false branch after tidying ordered branches 4ms
+     Ô£ô places the true IF branch left of the false branch after tidying crossed branches 3ms
+     Ô£ô should handle nodes with missing dimensions 5ms
+     Ô£ô should use agent fallback dimensions and keep the column centered when unmeasured 2ms
+     Ô£ô should keep a measured agent card on the grid with its handle on the column axis 2ms
+     Ô£ô should calculate dimensions for configurable nodes with missing dimensions 3ms
+     Ô£ô should handle mixed scenarios with sticky notes and missing dimensions 3ms
+     ÔØ» node groups (34)
+       Ô£ô lays out a collapsed group as a unit, tidies members and drops the chip 6ms
+       Ô£ô keeps a collapsed agent card on the grid when restoring group members 3ms
+       Ô£ô keeps a collapsed group clustered between its external neighbours 3ms
+       Ô£ô tidies hidden members when a collapsed group chip is selected 4ms
+       Ô£ô tidies a collapsed branch group selected by its hidden members 3ms
+       Ô£ô keeps a top-left collapsed group anchored in place while tidying contents 4ms
+       Ô£ô is idempotent: tidying an already tidy canvas with expanded groups moves nothing 17ms
+       Ô£ô is idempotent: tidying an already tidy canvas with collapsed groups moves nothing 14ms
+       Ô£ô is idempotent with parallel groups when one group is collapsed 16ms
+       Ô£ô tidies the members of an expanded group and drops the chip 3ms
+       Ô£ô keeps an internal sticky note aligned with a expanded group 3ms
+       Ô£ô keeps an internal sticky note aligned with a collapsed group 3ms
+       Ô£ô uses saved sticky dimensions for hidden group members 3ms
+       Ô£ô moves a sticky note covering an expanded group along with its members 6ms
+       Ô£ô moves a sticky note covering a collapsed group along with its members 3ms
+       Ô£ô moves a sticky note covering an expanded group when tidying only that group 3ms
+       Ô£ô moves a sticky note covering a collapsed group when tidying only that group 2ms
+       Ô£ô leaves a sticky note alone when it covers no node or group 2ms
+       ├ù reserves room for a sticky note that covers a group 18ms
+       Ô£ô falls back to following covered nodes when a sticky note spans two groups 6ms
+       ├ù keeps a sticky note covering collapsed and expanded group boxes 5ms
+       ├ù grows a sticky note when needed to keep covering the same group boxes 5ms
+       Ô£ô leaves a sticky note alone when it only partially covers group boxes 5ms
+       ├ù falls back when a sticky note covers a group and an ungrouped node 5ms
+       Ô£ô leaves a shared sticky note out when tidying only one covered group 3ms
+       ├ù leaves a sticky note out when it also covers a partial group member 4ms
+       Ô£ô keeps a chain through an expanded group on the connection axis without a covering sticky note 5ms
+       Ô£ô keeps a chain through an expanded group on the connection axis with a covering sticky note 3ms
+       Ô£ô keeps an expanded group clustered between its external neighbours 3ms
+       Ô£ô lays out expanded groups without overlapping their frames 7ms
+       Ô£ô spaces expanded group frames by the size of their tidied members 6ms
+       Ô£ô keeps expanded group members as plain nodes for a partial selection 2ms
+       Ô£ô tidies an AI subtree inside an expanded group like a top-level one 3ms
+       Ô£ô supports collapsed and expanded group units in the same layout 6ms
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ» Failed Tests 5 ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > reserves 
+room for a sticky note that covers a group
+AssertionError: expected -80 to be -176 // Object.is equality
+
+- Expected
++ Received
+
+- -176
++ -80
+
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:1403:57
+    1401|    // The sticky moved rigidly with the group it covers
+    1402|    expect(checkOverlap(sticky, approval.frame)).toBe(false);
+    1403|    expect(sticky.x - positions.get('billing-start')!.x).toBe(1072 - 12ÔÇª
+       |                                                         ^
+    1404|    expect(sticky.y - positions.get('billing-start')!.y).toBe(-112 - 24ÔÇª
+    1405|    expect(matchesGrid(result)).toBe(true);
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[1/5]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > keeps a 
+sticky note covering collapsed and expanded group boxes
+AssertionError: expected 304 to be 400 // Object.is equality
+
+- Expected
++ Received
+
+- 400
++ 304
+
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:1454:21
+    1452|    ).expanded;
+    1453|
+    1454|    expect(sticky.x).toBe(400);
+       |                     ^
+    1455|    expect(containsBox(sticky, approvalChip)).toBe(true);
+    1456|    expect(containsBox(sticky, billingFrame)).toBe(true);
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[2/5]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > grows a 
+sticky note when needed to keep covering the same group boxes
+{
+  message: '',
+  actual: null,
+  expected: undefined,
+  showDiff: false,
+  name: 'AssertionError',
+  ok: false,
+  stack: 'AssertionError: \n' +
+    '    at C:/Users/Usuario-01/Documents/Projeto Padr├úo/n8n-master/packages/frontend/editor-ui/src/features/workflows
+/canvas/composables/useCanvasLayout.test.ts:1470:4\n' +
+    '    at file:///C:/Users/Usuario-01/Documents/Projeto%20Padr%C3%A3o/n8n-master/node_modules/.pnpm/vitest@5.0.1_@ope
+ntelemetry_81b5844da54ceb396b642a41cad5b1c3/node_modules/vitest/dist/chunks/run.C5UmxDPh.js:1628:35\n' +
+    '    at file:///C:/Users/Usuario-01/Documents/Projeto%20Padr%C3%A3o/n8n-master/node_modules/.pnpm/vitest@5.0.1_@ope
+ntelemetry_81b5844da54ceb396b642a41cad5b1c3/node_modules/vitest/dist/chunks/run.C5UmxDPh.js:2783:26\n' +
+    '    at file:///C:/Users/Usuario-01/Documents/Projeto%20Padr%C3%A3o/n8n-master/node_modules/.pnpm/vitest@5.0.1_@ope
+ntelemetry_81b5844da54ceb396b642a41cad5b1c3/node_modules/vitest/dist/chunks/run.C5UmxDPh.js:3319:20\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at runWithCancel (file:///C:/Users/Usuario-01/Documents/Projeto%20Padr%C3%A3o/n8n-master/node_modules/.pnpm/vi
+test@5.0.1_@opentelemetry_81b5844da54ceb396b642a41cad5b1c3/node_modules/vitest/dist/chunks/run.C5UmxDPh.js:3314:10)\n' 
++
+    '    at file:///C:/Users/Usuario-01/Documents/Projeto%20Padr%C3%A3o/n8n-master/node_modules/.pnpm/vitest@5.0.1_@ope
+ntelemetry_81b5844da54ceb396b642a41cad5b1c3/node_modules/vitest/dist/chunks/run.C5UmxDPh.js:3299:20\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at runWithTimeout (file:///C:/Users/Usuario-01/Documents/Projeto%20Padr%C3%A3o/n8n-master/node_modules/.pnpm/v
+itest@5.0.1_@opentelemetry_81b5844da54ceb396b642a41cad5b1c3/node_modules/vitest/dist/chunks/run.C5UmxDPh.js:3257:10)\n'
+ +
+    '    at file:///C:/Users/Usuario-01/Documents/Projeto%20Padr%C3%A3o/n8n-master/node_modules/.pnpm/vitest@5.0.1_@ope
+ntelemetry_81b5844da54ceb396b642a41cad5b1c3/node_modules/vitest/dist/chunks/run.C5UmxDPh.js:3876:64',
+  stacks: [
+    {
+      method: '',
+      file: 'C:/Users/Usuario-01/Documents/Projeto 
+Padr├úo/n8n-master/packages/frontend/editor-ui/src/features/workflows/canvas/composables/useCanvasLayout.test.ts',
+      line: 1470,
+      column: 4
+    }
+  ]
+}
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:1470:4
+    1468|
+    1469|    assert(stickyResult);
+    1470|    assert(stickyResult.height !== undefined);
+       |    ^
+    1471|    expect(stickyResult.height).toBeGreaterThan(480);
+    1472|    expect(stickyResult.width).toBe(1400);
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[3/5]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > falls back 
+when a sticky note covers a group and an ungrouped node
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:1515:7
+    1513|       height: DEFAULT_NODE_SIZE[1],
+    1514|      }),
+    1515|     ).toBe(true);
+       |       ^
+    1516|    }
+    1517|   });
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[4/5]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/useCanvasLayout.test.ts > useCanvasLayout > node groups > leaves a 
+sticky note out when it also covers a partial group member
+AssertionError: expected [ 'approval-start', 'approval-done' ] to include 'sticky'
+ ÔØ» src/features/workflows/canvas/composables/useCanvasLayout.test.ts:1544:51
+    1542|     nodeIdsFilter: ['approval-start', 'approval-done'],
+    1543|    });
+    1544|    expect(groupOnly.nodes.map((node) => node.id)).toContain('sticky');
+       |                                                   ^
+    1545|
+    1546|    const { layout } = createStickyOverParallelGroupsSetup({
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[5/5]ÔÄ»
+
+
+ Test Files  1 failed (1)
+      Tests  5 failed | 42 passed (47)
+   Start at  01:57:58
+   Duration  12.86s (transform 65%, import 18%, setup 8%, environment 7%, tests 2%)
+
+  Transform  transforming modules took 8.18s ┬À 65% of tracked time, re-done on every run
+             persist transforms across runs with fsModuleCache: true
+             learn more: https://vitest.dev/guide/improving-performance#caching-between-reruns
+

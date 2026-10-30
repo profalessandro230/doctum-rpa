@@ -1,0 +1,49 @@
+Initializing n8n process
+n8n ready on ::, port 5678
+n8n Task Broker ready on 127.0.0.1, port 5679
+Failed to start Python task runner in internal mode. because Python 3 is missing from this system. Launching a Python runner in internal mode is intended only for debugging and is not recommended for production. Users are encouraged to deploy in external mode. See: https://docs.n8n.io/hosting/configuration/task-runners/#setting-up-external-mode
+
+There are deprecations related to your n8n setup. Please take the recommended actions to update your configuration:
+ - N8N_UNVERIFIED_PACKAGES_ENABLED -> The default for this variable will change to `false` in a future version. Set it to `true` explicitly to keep installing unverified community packages.
+ - N8N_RUNNERS_MODE -> Internal task runner mode is deprecated and will be removed in a future version. For isolation and scaling, run the task runner launcher as a separate process, set this variable to `external` and share `N8N_RUNNERS_AUTH_TOKEN` with the launcher. See https://docs.n8n.io/deploy/host-n8n/configure-n8n/set-up-task-runners
+ - N8N_RUNNERS_TASK_TIMEOUT -> The default for this variable will be reduced from 300 (5 minutes) to 60 (1 minute) in a future version. Set it explicitly to keep your current task timeout.
+ - N8N_COMPRESSION_NODE_MAX_DECOMPRESSED_SIZE_BYTES -> The default for this variable will be reduced from 2 GiB to 256 MiB in a future version. Set it explicitly to keep your current limit.
+ - N8N_COMPRESSION_NODE_MAX_ZIP_ENTRIES -> The default for this variable will be reduced from 5000 to 1000 in a future version. Set it explicitly to keep your current limit.
+ - Running n8n outside a container is deprecated. Future versions will require running n8n via the official Docker image. See https://docs.n8n.io/deploy/host-n8n
+
+[license SDK] Skipping renewal on init: license cert is not initialized
+Registered runner "JS Task Runner" (Jw7iJXzneiDmVhPbfnWru) 
+Instance registered
+Cluster aligned on version 2.45.0
+Discovered 4 cluster checks
+Sandbox: enabled=false provider=n8n-sandbox (from env)
+Version: 2.45.0
+Building workflow dependency index...
+Scheduler started
+Finished building workflow dependency index. Processed 0 draft workflows, 0 published workflows.
+
+Editor is now accessible via:
+http://localhost:5678
+Telemetry event "Instance started" carries no user_id, so PostHog drops it. Pass user_id in the event properties at the emit site.
+timeout of 6000ms exceeded
+AxiosError: timeout of 6000ms exceeded
+    at createTimeoutError (C:\Users\Usuario-01\Documents\Projeto Padrão\n8n-master\node_modules\.pnpm\axios@1.20.0_debug@4.4.3_su_e4168974f8ce958516c02959aebbd2fb\node_modules\axios\dist\node\axios.cjs:4308:14)
+    at RedirectableRequest.handleTimeout (C:\Users\Usuario-01\Documents\Projeto Padrão\n8n-master\node_modules\.pnpm\axios@1.20.0_debug@4.4.3_su_e4168974f8ce958516c02959aebbd2fb\node_modules\axios\dist\node\axios.cjs:4842:15)
+    at RedirectableRequest.emit (node:events:514:28)
+    at Timeout._onTimeout (C:\Users\Usuario-01\Documents\Projeto Padrão\n8n-master\node_modules\.pnpm\follow-redirects@1.16.1_debug@4.4.3_supports-color@8.1.1_\node_modules\follow-redirects\index.js:233:12)
+    at listOnTimeout (node:internal/timers:685:17)
+    at processTimers (node:internal/timers:618:7)
+    at Axios.request (C:\Users\Usuario-01\Documents\Projeto Padrão\n8n-master\node_modules\.pnpm\axios@1.20.0_debug@4.4.3_su_e4168974f8ce958516c02959aebbd2fb\node_modules\axios\dist\node\axios.cjs:6308:43)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at requestWithResponseLimit (C:\Users\Usuario-01\Documents\Projeto Padrão\n8n-master\packages\@n8n\backend-network\src\http\axios\invoke.ts:52:10)
+    at invokeWithChallengeAuth (C:\Users\Usuario-01\Documents\Projeto Padrão\n8n-master\packages\@n8n\backend-network\src\http\axios\invoke.ts:30:10)
+    at invokeAxios (C:\Users\Usuario-01\Documents\Projeto Padrão\n8n-master\packages\@n8n\backend-network\src\http\axios\invoke.ts:10:10)
+    at sendHttpRequest (C:\Users\Usuario-01\Documents\Projeto Padrão\n8n-master\packages\@n8n\backend-network\src\http\axios\request.ts:237:5)
+    at httpRequest (C:\Users\Usuario-01\Documents\Projeto Padrão\n8n-master\packages\@n8n\backend-network\src\http\axios\request.ts:201:10)
+    at Object.request (C:\Users\Usuario-01\Documents\Projeto Padrão\n8n-master\packages\@n8n\backend-network\src\http\outbound-http.ts:216:12)
+    at paginatedRequest (Z:\packages\cli\src\utils\strapi-utils.ts:90:15)
+    at McpRegistryApiClient.fetchServersMetadata (Z:\packages\cli\src\modules\mcp-registry\registry\mcp-registry-api.client.ts:53:10)
+
+Error fetching from Strapi API (https://api.n8n.io/api/mcp-servers): timeout of 6000ms exceeded
+A system task run failed
+Pruning old insights data

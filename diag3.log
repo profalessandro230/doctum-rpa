@@ -1,0 +1,354 @@
+﻿node.exe : [33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned 
+to become the default in a future major version of Vite:
+No C:\Users\Usuario-01\AppData\Local\Temp\opencode\pnpm-bin\pnpm.ps1:24 caractere:5
++     & "node$exe"  "$basedir/../../../../../../../Program Files/nodejs ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([33m(!) Your V...ersion of Vite::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  - `__dirname` (vite.config.mts:28:29). Use `import.meta.dirname` instead
+  - import "../@n8n/design-system/src/icons/lucide/vite" without a file extension (vite.config.mts:12:35). Add the 
+file extension
+  - import "./vite/i18n-locales-hmr-helpers" without a file extension (vite.config.mts:15:48). Add the file extension
+  - import "../../@n8n/constants/src/csp" without a file extension (vite.config.mts:20:40). Add the file extension
+  - ESM syntax in a file loaded as CommonJS (../../@n8n/constants/src/csp.ts:6:1). Use a `.mjs` extension or set 
+`"type": "module"` in the closest package.json
+  - import "./bucket" without a file extension (../@n8n/design-system/src/icons/lucide/vite.ts:5:46). Add the file 
+extension
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.[39m
+
+ RUN  v5.0.1 C:/Users/Usuario-01/Documents/Projeto Padr├úo/n8n-master/packages/frontend/editor-ui
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts (15 tests | 15 failed) 99ms
+   ÔØ» diag (15)
+     ├ù IF branches 33ms
+     ├ù missing dims 7ms
+     ├ù agent fallback 3ms
+     ├ù measured agent 3ms
+     ├ù mixed sticky 6ms
+     ├ù collapsed group unit 7ms
+     ├ù collapsed clustered 4ms
+     ├ù collapsed selected 3ms
+     ├ù branch group 5ms
+     ├ù expanded tidy 3ms
+     ├ù expanded clustered 4ms
+     ├ù sticky hidden members 3ms
+     ├ù internal sticky 7ms
+     ├ù sticky over group selection 5ms
+     ├ù chain expanded 3ms
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ» Failed Tests 15 ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag > IF branches
+AssertionError: expected [ ÔÇª(2) ] to deeply equal [ 'PLACEHOLDER' ]
+
+- Expected
++ Received
+
+  [
+-   "PLACEHOLDER",
++   "-144/48 if=(16,-144)  true=(-64,-32)  false=(80,-32)",
++   "48/-144 if=(16,-144)  false=(80,-32)  true=(-64,-32)",
+  ]
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:88:16
+     86|    outs.push(`${trueY}/${falseY} ${fmt(layout('all'))}`);
+     87|   }
+     88|   expect(outs).toEqual(['PLACEHOLDER']);
+       |                ^
+     89|  });
+     90|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[1/15]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag > missing dims
+AssertionError: expected { ÔÇª(2) } to deeply equal 'PLACEHOLDER'
+
+- Expected:
+"PLACEHOLDER"
+
++ Received:
+{
+  "bbox": {
+    "height": 276,
+    "width": 448,
+    "x": 0,
+    "y": 0,
+  },
+  "str": "node1=(272,96)  node2=(96,208)  node3=(270,270)",
+}
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:99:48
+     97|   const { layout } = setup(nodes, [['node1', 'node2'], ['node2', 'nodeÔÇª
+     98|   const r = layout('all');
+     99|   expect({ str: fmt(r), bbox: r.boundingBox }).toEqual('PLACEHOLDER');
+       |                                                ^
+    100|  });
+    101|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[2/15]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag > agent fallback
+AssertionError: expected { ÔÇª(2) } to deeply equal 'PLACEHOLDER'
+
+- Expected:
+"PLACEHOLDER"
+
++ Received:
+{
+  "bbox": {
+    "height": 232,
+    "width": 448,
+    "x": 0,
+    "y": 0,
+  },
+  "str": "node=(272,96)  agent=(96,208)",
+}
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:109:48
+    107|   const { layout } = setup(nodes, [['node', 'agent']]);
+    108|   const r = layout('all');
+    109|   expect({ str: fmt(r), bbox: r.boundingBox }).toEqual('PLACEHOLDER');
+       |                                                ^
+    110|  });
+    111|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[3/15]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag > measured agent
+AssertionError: expected { ÔÇª(5) } to deeply equal 'PLACEHOLDER'
+
+- Expected:
+"PLACEHOLDER"
+
++ Received:
+{
+  "AGENT": [
+    448,
+    128,
+  ],
+  "DEF": [
+    448,
+    64,
+  ],
+  "GRID": 16,
+  "SPACING": 128,
+  "str": "node=(272,96)  agent=(96,208)",
+}
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:119:117
+    117|   const { layout } = setup(nodes, [['node', 'agent']]);
+    118|   const r = layout('all');
+    119|   expect({ str: fmt(r), AGENT: AGENT_NODE_SIZE, DEF: DEFAULT_NODE_SIZEÔÇª
+       |                                                                                                               
+      ^
+    120|  });
+    121|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[4/15]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag > mixed sticky
+AssertionError: expected 'node1=(96,96)  node2=(94,206)  stickyÔÇª' to deeply equal 'PLACEHOLDER'
+
+Expected: "PLACEHOLDER"
+Received: "node1=(96,96)  node2=(94,206)  sticky=(-96,-32)"
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:129:30
+    127|   ];
+    128|   const { layout } = setup(nodes, [['node1', 'node2']]);
+    129|   expect(fmt(layout('all'))).toEqual('PLACEHOLDER');
+       |                              ^
+    130|  });
+    131|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[5/15]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag > collapsed group unit
+AssertionError: expected { ÔÇª(2) } to deeply equal { str: 'PLACEHOLDER', ÔÇª(1) }
+
+- Expected
++ Received
+
+  {
+-   "bbox": "PLACEHOLDER",
+-   "str": "PLACEHOLDER",
++   "bbox": {
++     "height": 272,
++     "width": 400,
++     "x": 0,
++     "y": 0,
++   },
++   "str": "before=(160,0)  after=(160,176)  m1=(64,208)  m2=(64,320)",
+  }
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:156:48
+    154|   const { layout } = collapsedSetup();
+    155|   const r = layout('all');
+    156|   expect({ str: fmt(r), bbox: r.boundingBox }).toEqual({ str: 'PLACEHOÔÇª
+       |                                                ^
+    157|  });
+    158|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[6/15]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag > collapsed clustered
+AssertionError: expected 'before=(160,0)  after=(160,176)  m1=(ÔÇª' to deeply equal 'PLACEHOLDER'
+
+Expected: "PLACEHOLDER"
+Received: "before=(160,0)  after=(160,176)  m1=(64,208)  m2=(64,320)"
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:162:18
+    160|   const { layout } = collapsedSetup();
+    161|   const r = layout('all');
+    162|   expect(fmt(r)).toEqual('PLACEHOLDER');
+       |                  ^
+    163|  });
+    164|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[7/15]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag > collapsed selected
+AssertionError: expected 'm1=(1008,1008)  m2=(1008,1120)' to deeply equal 'PLACEHOLDER'
+
+Expected: "PLACEHOLDER"
+Received: "m1=(1008,1008)  m2=(1008,1120)"
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:168:18
+    166|   const { layout } = collapsedSetup(undefined, [chipId]);
+    167|   const r = layout('selection');
+    168|   expect(fmt(r)).toEqual('PLACEHOLDER');
+       |                  ^
+    169|  });
+    170|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[8/15]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag > branch group
+AssertionError: expected 'first=(-272,144)  second=(-272,256)' to deeply equal 'PLACEHOLDER'
+
+Expected: "PLACEHOLDER"
+Received: "first=(-272,144)  second=(-272,256)"
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:176:36
+    174|   const group = createCanvasGraphGroupNode({ id: 'group', nodeIds: ['fÔÇª
+    175|   const { layout } = setup([first, second, group], [], ['first', 'secoÔÇª
+    176|   expect(fmt(layout('selection'))).toEqual('PLACEHOLDER');
+       |                                    ^
+    177|  });
+    178|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[9/15]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag > expanded tidy
+AssertionError: expected 'm1=(96,96)  m2=(96,208)' to deeply equal 'PLACEHOLDER'
+
+Expected: "PLACEHOLDER"
+Received: "m1=(96,96)  m2=(96,208)"
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:184:30
+    182|   const group = createCanvasGraphGroupNode({ id: groupId, nodeIds: ['mÔÇª
+    183|   const { layout } = setup([m1, m2, group], [['m1', 'm2']]);
+    184|   expect(fmt(layout('all'))).toEqual('PLACEHOLDER');
+       |                              ^
+    185|  });
+
+ Test Files  1 failed (1)
+      Tests  15 failed (15)
+   Start at  00:12:41
+   Duration  10.14s (transform 58%, import 23%, setup 10%, environment 8%, tests 1%)
+    186|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[10/15]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag > expanded clustered
+AssertionError: expected 'before=(160,0)  after=(160,512)  m1=(ÔÇª' to deeply equal 'PLACEHOLDER'
+
+Expected: "PLACEHOLDER"
+Received: "before=(160,0)  after=(160,512)  m1=(64,208)  m2=(64,320)"
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:194:30
+    192|   const group = createCanvasGraphGroupNode({ id: groupId, nodeIds: ['mÔÇª
+    193|   const { layout } = setup([before, m1, m2, after, group], [['before',ÔÇª
+    194|   expect(fmt(layout('all'))).toEqual('PLACEHOLDER');
+       |                              ^
+    195|  });
+    196|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[11/15]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag > sticky hidden members
+AssertionError: expected 'first=(1152,1024)  second=(1152,1136)ÔÇª' to deeply equal 'PLACEHOLDER'
+
+Expected: "PLACEHOLDER"
+Received: "first=(1152,1024)  second=(1152,1136)  sticky=(960,928)"
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:205:30
+
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[12/15]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag > internal sticky
+AssertionError: expected [ ÔÇª(2) ] to deeply equal [ 'PLACEHOLDER' ]
+
+- Expected
++ Received
+
+  [
+-   "PLACEHOLDER",
++   "EXP trigger=(-176,-496)  first=(-272,-288)  second=(-272,-192)  sticky=(-224,64)",
++   "COLL trigger=(-176,-496)  first=(-272,-288)  second=(-272,-192)  sticky=(-224,64)",
+  ]
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:222:16
+    220|    outs.push(`${isCollapsed ? 'COLL' : 'EXP'} ${fmt(layout('all'))}`);
+    221|   }
+    222|   expect(outs).toEqual(['PLACEHOLDER']);
+       |                ^
+    223|  });
+    224|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[13/15]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag > sticky over group selection
+AssertionError: expected [ ÔÇª(2) ] to deeply equal [ 'PLACEHOLDER' ]
+
+- Expected
++ Received
+
+  [
+-   "PLACEHOLDER",
++   "EXP m1=(1008,1008)  m2=(1008,1232)  sticky=(800,704)",
++   "COLL m1=(1008,1008)  m2=(1008,1232)  sticky=(800,704)",
+  ]
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:236:16
+    234|    outs.push(`${isCollapsed ? 'COLL' : 'EXP'} ${fmt(layout('selection'ÔÇª
+    235|   }
+    236|   expect(outs).toEqual(['PLACEHOLDER']);
+       |                ^
+    237|  });
+    238|
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[14/15]ÔÄ»
+
+ FAIL  src/features/workflows/canvas/composables/diagLayout.test.ts > diag > chain expanded
+AssertionError: expected 'before=(160,144)  after=(160,640)  m1ÔÇª' to deeply equal 'PLACEHOLDER'
+
+Expected: "PLACEHOLDER"
+Received: "before=(160,144)  after=(160,640)  m1=(64,352)  m2=(64,448)"
+
+ ÔØ» src/features/workflows/canvas/composables/diagLayout.test.ts:248:30
+    246|   const group = createCanvasGraphGroupNode({ id: groupId, nodeIds: ['mÔÇª
+    247|   const { layout } = setup([before, m1, m2, after, group], [['before',ÔÇª
+    248|   expect(fmt(layout('all'))).toEqual('PLACEHOLDER');
+       |                              ^
+    249|  });
+    250| });
+
+ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[15/15]ÔÄ»
+
+
+  Transform  transforming modules took 5.74s ┬À 58% of tracked time, re-done on every run
+             persist transforms across runs with fsModuleCache: true
+             learn more: https://vitest.dev/guide/improving-performance#caching-between-reruns
+
