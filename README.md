@@ -21,8 +21,6 @@
 
 ## Sobre o projeto
 
-O **n8n** (pronuncia-se *"nodemation"") é uma plataforma de automação de fluxos de trabalho (workflow automation) de código aberto, licenciada sob **AGPL-3.0**. Ele permite conectar APIs e serviços diferentes através de uma interface visual de "nós" (nodes) ligados por conexões, disparando automações por gatilhos (triggers) como agendamento, webhooks, e-mails ou eventos de outros sistemas.
-
 Este repositório é um **fork personalizado do n8n** com rebranding para a **Rede de Ensino Doctum** e uma série de mudanças **estéticas** que aproximam a experiência de uso do **Power Automate Desktop** da Microsoft:
 
 - **Layout vertical (empilhado):** os nós são organizados de cima para baixo (`rankdir: 'TB'` no algoritmo de layout), tal como no Power Automate, em vez do fluxo esquerda→direita clássico do n8n.
@@ -72,6 +70,7 @@ O valor científico do projeto está justamente em **estudar e comparar** duas a
 ---
 
 ## Tecnologias e linguagens
+O Projeto utiliza o mesmo core do **n8n**, uma plataforma de automação de fluxos de trabalho (workflow automation) de código aberto, licenciada sob **AGPL-3.0**. Ele permite conectar APIs e serviços diferentes através de uma interface visual de "nós" (nodes) ligados por conexões, disparando automações por gatilhos (triggers) como agendamento, webhooks, e-mails ou eventos de outros sistemas.
 
 O projeto é um monorepo gerenciado por **pnpm workspaces**. As linguagens e tecnologias utilizadas no código-fonte:
 
