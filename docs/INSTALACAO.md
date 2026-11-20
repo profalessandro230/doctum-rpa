@@ -196,6 +196,23 @@ pnpm n8n
 pnpm --filter n8n-editor-ui dev
 ```
 
+### Script de inicialização (Linux)
+
+O repositório inclui o script **`iniciar-doctum-rpa.sh`**, que automatiza a inicialização (sobe os servidores em segundo plano, espera a interface responder **HTTP 200** e abre o navegador).
+
+```bash
+chmod +x iniciar-doctum-rpa.sh
+
+./iniciar-doctum-rpa.sh              # desenvolvimento: backend (5678) + Vite (8080)
+./iniciar-doctum-rpa.sh --producao   # produção: só backend (5678), UI já compilada
+./iniciar-doctum-rpa.sh --status     # estado dos servidores
+./iniciar-doctum-rpa.sh --parar      # encerra os servidores iniciados pelo script
+```
+
+- `--producao` exige a interface compilada: `cd packages/frontend/editor-ui && pnpm run build`
+- Logs e PIDs: `~/.cache/doctum-rpa/`
+- Projeto em local diferente: `DOCTUM_RPA_DIR=/caminho/do/projeto ./iniciar-doctum-rpa.sh`
+
 ---
 
 ## Primeiro acesso e criação do usuário

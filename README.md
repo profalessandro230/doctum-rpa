@@ -276,6 +276,24 @@ pnpm n8n
 
 > **Windows — dica de drive:** se o caminho do projeto estiver em uma unidade mapeada ou contiver espaços (ex.: `C:\Users\Meu Usuario\Meu Projeto`), o n8n e o Node podem falhar. Prefira caminhos curtos e sem espaços, ou crie uma letra de unidade (`subst`) para o diretório, como foi feito neste ambiente de estudo.
 
+#### Linux — atalho de inicialização (script `.sh`)
+
+O repositório inclui o script **`iniciar-doctum-rpa.sh`**, que localiza o projeto, sobe os servidores em segundo plano, espera a interface responder **HTTP 200** e abre o navegador.
+
+```bash
+chmod +x iniciar-doctum-rpa.sh
+
+./iniciar-doctum-rpa.sh              # desenvolvimento: backend (5678) + Vite (8080)
+./iniciar-doctum-rpa.sh --producao   # produção: só backend (5678), UI já compilada
+./iniciar-doctum-rpa.sh --status     # mostra o estado dos servidores
+./iniciar-doctum-rpa.sh --parar      # encerra os servidores iniciados pelo script
+```
+
+- No modo `--producao`, compile a interface uma vez: `cd packages/frontend/editor-ui && pnpm run build`
+- Logs e PIDs ficam em `~/.cache/doctum-rpa/`
+- Se o projeto não for encontrado: `DOCTUM_RPA_DIR=/caminho/do/projeto ./iniciar-doctum-rpa.sh`
+
+
 ### Estrutura do banco de dados
 
 Por padrão o n8n usa **SQLite** em `~/.n8n/database.sqlite`. Para produção, recomenda-se **PostgreSQL** configurado via variáveis de ambiente (`DB_TYPE=postgresdb`, `DB_POSTGRESDB_*`).
