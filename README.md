@@ -293,6 +293,21 @@ chmod +x iniciar-doctum-rpa.sh
 - Logs e PIDs ficam em `~/.cache/doctum-rpa/`
 - Se o projeto não for encontrado: `DOCTUM_RPA_DIR=/caminho/do/projeto ./iniciar-doctum-rpa.sh`
 
+#### Windows — atalho de inicialização (script `.bat`)
+
+O repositório também inclui **`iniciar-doctum-rpa.bat`**, equivalente ao script Linux: cria automaticamente a unidade virtual `Z:` (evita problemas com acentos/espaços no caminho), inicia cada servidor em sua própria janela, espera a interface responder **HTTP 200** e abre o navegador.
+
+```bat
+iniciar-doctum-rpa.bat              REM desenvolvimento: backend (5678) + Vite (8080)
+iniciar-doctum-rpa.bat --producao   REM produção: só backend (5678)
+iniciar-doctum-rpa.bat --status     REM estado dos servidores
+iniciar-doctum-rpa.bat --parar      REM encerra os servidores
+```
+
+- Basta dar **duplo clique** no arquivo para iniciar em modo desenvolvimento
+- `--producao` exige a interface compilada (`pnpm run build` em `packages/frontend/editor-ui`)
+- Se o projeto não for encontrado: `set DOCTUM_RPA_DIR=C:\caminho\do\projeto` antes de executar
+
 
 ### Estrutura do banco de dados
 

@@ -213,6 +213,21 @@ chmod +x iniciar-doctum-rpa.sh
 - Logs e PIDs: `~/.cache/doctum-rpa/`
 - Projeto em local diferente: `DOCTUM_RPA_DIR=/caminho/do/projeto ./iniciar-doctum-rpa.sh`
 
+### Script de inicialização (Windows)
+
+O repositório inclui **`iniciar-doctum-rpa.bat`**, que automatiza a inicialização no Windows (cria a unidade virtual `Z:`, abre cada servidor em uma janela, espera **HTTP 200** e abre o navegador).
+
+```bat
+iniciar-doctum-rpa.bat              REM desenvolvimento: backend (5678) + Vite (8080)
+iniciar-doctum-rpa.bat --producao   REM produção: só backend (5678)
+iniciar-doctum-rpa.bat --status     REM estado dos servidores
+iniciar-doctum-rpa.bat --parar      REM encerra os servidores
+```
+
+- Duplo clique no arquivo = modo desenvolvimento
+- `--producao` exige `dist` compilado (`pnpm run build` em `packages/frontend/editor-ui`)
+- Projeto em local diferente: `set DOCTUM_RPA_DIR=C:\caminho\do\projeto`
+
 ---
 
 ## Primeiro acesso e criação do usuário
