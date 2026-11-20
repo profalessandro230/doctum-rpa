@@ -1,0 +1,192 @@
+{
+  "name": "Doctum RPA A - Indexar planilhas",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "a1000000-0000-4000-8000-000000000001",
+      "name": "Executar",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -208,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "fileSelector": "/home/x1/Music/planilhas/*.xlsx",
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000002",
+      "name": "Ler planilhas",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        -208,
+        80
+      ],
+      "notes": "Le todas as planilhas .xlsx da pasta /home/x1/Music/planilhas."
+    },
+    {
+      "parameters": {
+        "operation": "xlsx",
+        "options": {
+          "sheetName": "Candidatos"
+        }
+      },
+      "id": "a1000000-0000-4000-8000-000000000003",
+      "name": "Extrair linhas",
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1.2,
+      "position": [
+        -208,
+        160
+      ],
+      "notes": "Extrai a aba Candidatos de cada planilha (linhas vazias sao ignoradas)."
+    },
+    {
+      "parameters": {
+        "jsCode": "const fs = require('fs');\nconst LOG = '/home/x1/Music/.doctum_enviados.json';\n\nconst limpar = (v) =>\n  v === null || v === undefined ? '' : String(v).replace(/\\s+/g, ' ').trim();\n\nconst digitos = (v) => {\n  let d = String(v ?? '').replace(/\\D/g, '');\n  if (d.startsWith('55') && d.length > 11) d = d.slice(2);\n  return d;\n};\n\nconst chaveEnvio = (r) =>\n  ((r['Nome'] + ' ' + r['Sobrenome']).replace(/\\s+/g, ' ').trim() + '|' + digitos(r['Whatsapp'])).toLowerCase();\n\n// Quem ja foi enviado pelo workflow B permanece como 'Enviado' mesmo recriando a planilha\nlet log = [];\ntry {\n  log = JSON.parse(fs.readFileSync(LOG, 'utf8'));\n} catch (e) {\n  log = [];\n}\nconst jaEnviados = new Set(Array.isArray(log) ? log : []);\n\nconst rows = $input.all()\n  .map((item) => {\n    const j = item.json;\n    return {\n      'Índice': 0,\n      'Nome': limpar(j['Nome *'] ?? j['Nome']),\n      'Sobrenome': limpar(j['Sobrenome *'] ?? j['Sobrenome']),\n      'E-mail': limpar(j['E-mail'] ?? j['Email']),\n      'Whatsapp': limpar(j['Whatsapp *'] ?? j['Whatsapp']),\n      'Curso': limpar(j['Curso Pretendido'] ?? j['Curso']),\n      'Unidade': limpar(j['Unidade Pretendida *'] ?? j['Unidade Pretendida']),\n      'Modalidade': limpar(j['Modalidade']),\n      'Escolaridade': limpar(j['Grau escolaridade'] ?? j['Escolaridade']),\n      'Aceite Termos': limpar(j['Aceite Termos (SIM/NAO)'] ?? j['Aceite Termos']),\n      'Status de Envio': limpar(j['Status de Envio']) || 'Pendente',\n      'Captação': limpar(j['Captação do lead via'] ?? j['Captação']),\n    };\n  })\n  .filter((r) => r['Nome'] !== '');\n\n// Ordem alfabetica por Nome (pt-BR, ignorando acentos e maiusculas)\nrows.sort((a, b) => {\n  const c = a['Nome'].localeCompare(b['Nome'], 'pt-BR', { sensitivity: 'base' });\n  if (c !== 0) return c;\n  return a['Sobrenome'].localeCompare(b['Sobrenome'], 'pt-BR', { sensitivity: 'base' });\n});\n\nrows.forEach((r) => {\n  if (jaEnviados.has(chaveEnvio(r))) r['Status de Envio'] = 'Enviado';\n});\n\nrows.forEach((r, i) => {\n  r['Índice'] = i + 1;\n});\n\nreturn rows.map((r) => ({ json: r }));"
+      },
+      "id": "a1000000-0000-4000-8000-000000000004",
+      "name": "Normalizar e ordenar",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -208,
+        240
+      ],
+      "notes": "Padroniza as colunas, filtra linhas sem nome, ordena por Nome, cria o coluna Índice e preserva 'Enviado' de quem já consta no log."
+    },
+    {
+      "parameters": {
+        "operation": "xlsx",
+        "options": {
+          "fileName": "candidatos_indexado.xlsx",
+          "headerRow": true,
+          "sheetName": "Candidatos"
+        }
+      },
+      "id": "a1000000-0000-4000-8000-000000000005",
+      "name": "Gerar planilha",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.2,
+      "position": [
+        -208,
+        320
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "write",
+        "fileName": "/home/x1/Music/candidatos_indexado.xlsx",
+        "options": {
+          "append": false
+        }
+      },
+      "id": "a1000000-0000-4000-8000-000000000006",
+      "name": "Gravar planilha",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        -208,
+        400
+      ],
+      "notes": "Grava /home/x1/Music/candidatos_indexado.xlsx (sobrescreve a versao anterior)."
+    },
+    {
+      "parameters": {
+        "jsCode": "const rows = $('Normalizar e ordenar').all().map((i) => i.json);\nreturn [{\n  json: {\n    arquivo: '/home/x1/Music/candidatos_indexado.xlsx',\n    total: rows.length,\n    primeira: rows.length ? rows[0]['Nome'] : '',\n    ultima: rows.length ? rows[rows.length - 1]['Nome'] : '',\n  },\n}];"
+      },
+      "id": "a1000000-0000-4000-8000-000000000007",
+      "name": "Resumo",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -208,
+        480
+      ]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Executar": {
+      "main": [
+        [
+          {
+            "node": "Ler planilhas",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ler planilhas": {
+      "main": [
+        [
+          {
+            "node": "Extrair linhas",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extrair linhas": {
+      "main": [
+        [
+          {
+            "node": "Normalizar e ordenar",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalizar e ordenar": {
+      "main": [
+        [
+          {
+            "node": "Gerar planilha",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gerar planilha": {
+      "main": [
+        [
+          {
+            "node": "Gravar planilha",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gravar planilha": {
+      "main": [
+        [
+          {
+            "node": "Resumo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "563960cc-3c99-4e32-bd11-aaf64aa4f070",
+  "meta": {
+    "instanceId": "d475c15805f2f81ee9f0fefa15b6a062b2557af76840f1396d5ebb0f34b3725a"
+  },
+  "nodeGroups": [],
+  "id": "DoctumWorkflowA1",
+  "tags": []
+}

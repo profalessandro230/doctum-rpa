@@ -1,0 +1,56 @@
+{
+  "name": "Inserir número da linha em teste.txt",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "c1a2c3d4-0001-4000-8000-000000000001",
+      "name": "Executar workflow",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const fs = require('fs');\n\nconst arquivo = '/home/x1/Music/teste.txt';\n\n// Le o conteudo atual (se o arquivo nao existir, comeca vazio)\nlet texto = '';\nif (fs.existsSync(arquivo)) {\n  texto = fs.readFileSync(arquivo, 'utf8');\n}\n\n// Numero de linhas existentes (ignora o \\n final)\nlet linhas = 0;\nif (texto.length > 0) {\n  linhas = texto.replace(/\\n$/, '').split('\\n').length;\n}\n\nconst numeroDaLinha = linhas + 1;\n\n// Garante que a nova linha comece em uma linha propria\nconst prefixo = texto.length > 0 && !texto.endsWith('\\n') ? '\\n' : '';\n\n// Cria o arquivo se necessario (append)\nfs.appendFileSync(arquivo, prefixo + numeroDaLinha + '\\n', 'utf8');\n\nreturn [{\n  json: {\n    arquivo,\n    numeroDaLinha,\n    mensagem: `Linha ${numeroDaLinha} inserida em ${arquivo}`,\n  },\n}];"
+      },
+      "id": "c1a2c3d4-0002-4000-8000-000000000002",
+      "name": "Inserir número da linha",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        0,
+        80
+      ],
+      "notes": "Cria /home/x1/Music/teste.txt se não existir e acrescenta uma linha com o número seguinte ao total de linhas atuais."
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Executar workflow": {
+      "main": [
+        [
+          {
+            "node": "Inserir número da linha",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "32276378-b14d-4b54-b473-571491ad51ae",
+  "meta": {
+    "instanceId": "d475c15805f2f81ee9f0fefa15b6a062b2557af76840f1396d5ebb0f34b3725a"
+  },
+  "nodeGroups": [],
+  "id": "ablOfHTZpyr4GbgC",
+  "tags": []
+}

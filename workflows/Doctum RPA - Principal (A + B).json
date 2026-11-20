@@ -1,0 +1,94 @@
+{
+  "name": "Doctum RPA - Principal (A + B)",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "c3000000-0000-4000-8000-000000000001",
+      "name": "Executar",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -208,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "DoctumWorkflowA1",
+          "mode": "list",
+          "cachedResultName": "Doctum RPA A - Indexar planilhas"
+        },
+        "options": {}
+      },
+      "id": "c3000000-0000-4000-8000-000000000002",
+      "name": "Rodar workflow A",
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.1,
+      "position": [
+        -208,
+        80
+      ],
+      "notes": "Indexa todas as planilhas de /home/x1/Music/planilhas em /home/x1/Music/candidatos_indexado.xlsx."
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "DoctumWorkflowB2",
+          "mode": "list",
+          "cachedResultUrl": "/workflow/DoctumWorkflowB2",
+          "cachedResultName": "Doctum RPA B - Enviar formulários"
+        },
+        "options": {}
+      },
+      "id": "c3000000-0000-4000-8000-000000000003",
+      "name": "Rodar workflow B",
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.1,
+      "position": [
+        -208,
+        160
+      ],
+      "notes": "Envia para o formulario apenas as linhas com Status de Envio = Pendente e atualiza o status."
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Executar": {
+      "main": [
+        [
+          {
+            "node": "Rodar workflow A",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Rodar workflow A": {
+      "main": [
+        [
+          {
+            "node": "Rodar workflow B",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "3cd5440a-780e-467e-969e-e1e0b5d1485b",
+  "meta": {
+    "instanceId": "d475c15805f2f81ee9f0fefa15b6a062b2557af76840f1396d5ebb0f34b3725a"
+  },
+  "nodeGroups": [],
+  "id": "DoctumWorkflowM3",
+  "tags": []
+}
