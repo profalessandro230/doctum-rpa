@@ -1,4 +1,4 @@
 *.sh text eol=lf
-*.bat text eol=crlf
+*.bat -text
 *.patch text eol=lf
 docs/generated/**/* linguist-generated
