@@ -1,0 +1,17 @@
+{
+	"workflowPreview.ariaLabel.creating": "Criando workflow",
+	"workflowPreview.ariaLabel.preview": "Pré-visualização do workflow",
+	"workflowPreview.ariaLabel.ready": "Workflow pronto para abrir",
+	"workflowPreview.error.detailsUnavailable": "Não foi possível carregar a pré-visualização. Abra o workflow no n8n para visualizá-lo.",
+	"workflowPreview.error.invalidWorkflow": "Não foi possível carregar a pré-visualização porque os dados do workflow estão incompletos. Abra o workflow no n8n para visualizá-lo.",
+	"workflowPreview.error.previewUnavailable": "Parece que seu cliente MCP não suporta pré-visualizações de workflow. Abra o workflow no n8n para visualizá-lo.",
+	"workflowPreview.fallbackDescription": "Visualize seu workflow no n8n",
+	"workflowPreview.frameTitle": "Pré-visualização do workflow n8n",
+	"workflowPreview.loadingPreview": "Carregando pré-visualização",
+	"workflowPreview.nodeCount.many": "{count} nodes",
+	"workflowPreview.nodeCount.one": "1 node",
+	"workflowPreview.openButton": "Abrir no n8n",
+	"workflowPreview.openButtonShort": "Abrir",
+	"workflowPreview.readyLabel": "Workflow criado",
+	"workflowPreview.untitledWorkflow": "Workflow sem título"
+}
