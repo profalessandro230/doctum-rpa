@@ -18,6 +18,11 @@ set -u
 # portanto use "pt" (e nao "pt-BR").
 export N8N_DEFAULT_LOCALE="${N8N_DEFAULT_LOCALE:-pt}"
 
+# Modulos liberados para execucao no no Code (ex: fs, path, crypto).
+# Essencial para automacoes RPA locais (manipulacao de arquivos do sistema).
+export NODE_FUNCTION_ALLOW_BUILTIN="${NODE_FUNCTION_ALLOW_BUILTIN:-*}"
+export NODE_FUNCTION_ALLOW_EXTERNAL="${NODE_FUNCTION_ALLOW_EXTERNAL:-*}"
+
 PORT_BACKEND=5678
 PORT_FRONTEND=8080
 MODE="dev"

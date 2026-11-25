@@ -22,6 +22,10 @@ set "MODE=dev"
 
 rem Idioma padrao da interface (ISO 639-1: use "pt", nao "pt-BR")
 if not defined N8N_DEFAULT_LOCALE set "N8N_DEFAULT_LOCALE=pt"
+
+rem Modulos liberados para uso no no Code (RPA / manipulacao de arquivos)
+if not defined NODE_FUNCTION_ALLOW_BUILTIN set "NODE_FUNCTION_ALLOW_BUILTIN=*"
+if not defined NODE_FUNCTION_ALLOW_EXTERNAL set "NODE_FUNCTION_ALLOW_EXTERNAL=*"
 set "SCRIPT_DIR=%~dp0"
 
 rem ---------------------------------------------------------------- argumentos
