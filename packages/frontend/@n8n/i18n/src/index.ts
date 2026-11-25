@@ -22,7 +22,7 @@ export type * from './types';
 type LooseSchema = Record<string, unknown>;
 export const i18nInstance: I18n<LooseSchema, LooseSchema, LooseSchema, string, false> = createI18n({
 	legacy: false,
-	locale: 'en',
+	locale: 'pt',
 	fallbackLocale: 'en',
 	messages: { en: englishBaseText, pt: portugueseBaseText },
 	warnHtmlMessage: false,

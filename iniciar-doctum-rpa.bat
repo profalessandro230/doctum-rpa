@@ -19,6 +19,9 @@ rem ===========================================================================
 set "PORT_BACKEND=5678"
 set "PORT_FRONTEND=8080"
 set "MODE=dev"
+
+rem Idioma padrao da interface (ISO 639-1: use "pt", nao "pt-BR")
+if not defined N8N_DEFAULT_LOCALE set "N8N_DEFAULT_LOCALE=pt"
 set "SCRIPT_DIR=%~dp0"
 
 rem ---------------------------------------------------------------- argumentos

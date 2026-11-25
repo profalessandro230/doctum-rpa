@@ -14,6 +14,10 @@
 
 set -u
 
+# Idioma padrao da interface. O n8n aceita apenas codigos ISO 639-1,
+# portanto use "pt" (e nao "pt-BR").
+export N8N_DEFAULT_LOCALE="${N8N_DEFAULT_LOCALE:-pt}"
+
 PORT_BACKEND=5678
 PORT_FRONTEND=8080
 MODE="dev"

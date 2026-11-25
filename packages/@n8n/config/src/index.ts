@@ -264,7 +264,7 @@ export class GlobalConfig {
 
 	/** Default locale for the UI. */
 	@Env('N8N_DEFAULT_LOCALE')
-	defaultLocale: string = 'en';
+	defaultLocale: string = 'pt';
 
 	/** Whether to hide the page that shows active workflows and executions count. */
 	@Env('N8N_HIDE_USAGE_PAGE')
